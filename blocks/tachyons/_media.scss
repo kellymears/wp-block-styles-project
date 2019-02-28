@@ -1,0 +1,101 @@
+/**
+ * Media Blocks
+ *
+ * #1 wp-block-video
+ * #2 wp-block-embed
+ * #3 wp-block-audio
+ */
+.wp-block-video {
+  @include mh0;
+
+  video {
+    @include max-w-100;
+  }
+}
+
+.wp-block-embed.alignleft,
+.wp-block-embed.alignright {
+  max-width: 60%; // #TODO FIX MAX WIDTH
+  width: 100%;
+}
+
+.wp-has-aspect-ratio {
+  > .wp-block-embed__wrapper {
+    position: relative;
+
+    &::before {
+      @include db;
+
+      padding-top: 50%;
+      content: "";
+    }
+
+    iframe {
+      @include absolute;
+      @include top;
+      @include right;
+      @include bottom;
+      @include left;
+      @include ml-auto;
+      @include mr-auto;
+      @include w-100;
+      @include h-100;
+    }
+  }
+
+  &.wp-has-aspect-ratio.wp-embed-aspect-21-9 .wp-block-embed__wrapper::before {
+    padding-top: 42.85%; // 9 / 21 * 100
+  }
+
+  &.wp-has-aspect-ratio.wp-embed-aspect-18-9 .wp-block-embed__wrapper::before {
+    padding-top: 50%; // 9 / 18 * 100
+  }
+
+  &.wp-has-aspect-ratio.wp-embed-aspect-16-9 .wp-block-embed__wrapper::before {
+    padding-top: 56.25%; // 9 / 16 * 100
+  }
+
+  &.wp-has-aspect-ratio.wp-embed-aspect-4-3 .wp-block-embed__wrapper::before {
+    padding-top: 75%; // 3 / 4 * 100
+  }
+
+  &.wp-has-aspect-ratio.wp-embed-aspect-1-1 .wp-block-embed__wrapper::before {
+    padding-top: 100%; // 1 / 1 * 100
+  }
+
+  &.wp-has-aspect-ratio.wp-embed-aspect-9-6 .wp-block-embed__wrapper::before {
+    padding-top: 66.66%; // 6 / 9 * 100
+  }
+
+  &.wp-has-aspect-ratio.wp-embed-aspect-1-2 .wp-block-embed__wrapper::before {
+    padding-top: 200%; // 2 / 1 * 100
+  }
+}
+
+.wp-block-audio {
+  audio {
+    @include db;
+    @include w-70-l;
+    @include ml-auto;
+    @include mr-auto;
+
+    border-radius: 45px;
+    transition: all 0.4s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      transform: scale(1.02);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  figcaption {
+    @include pt2;
+    @include pr2;
+    @include f7;
+    @include i;
+    @include tc;
+  }
+}

@@ -1,0 +1,38 @@
+> * {
+  @include ml-auto;
+  @include mr-auto;
+  @include mw6-m;
+  @include mw7-l;
+  @include ph2;
+  @include mv4;
+}
+
+> .feature-block {
+  @include w-100;
+  @include mw-none;
+  @include mv4;
+  @include pv4;
+  @include mh0;
+  @include ph0;
+}
+
+> .feature-block > .alignfull {
+  @include w-100;
+  @include w-100;
+  @include ma0;
+  @include ph0;
+}
+
+> .feature-block > .alignwide {
+  @include w-100-m;
+  @include ml2;
+  @include mr2;
+  @include mv0;
+  @include ml-auto;
+  @include mr-auto;
+}
+
+> .feature-block > div[class^="wp-block-"].alignwide,
+> .feature-block > div[class^="wp-block-"].alignfull {
+  @extend .wp-blocks;
+}

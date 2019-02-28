@@ -1,0 +1,75 @@
+/**
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+@mixin lh-solid {
+  line-height: $line-height-solid;
+}
+
+@mixin lh-title {
+  line-height: $line-height-title;
+}
+
+@mixin lh-copy {
+  line-height: $line-height-copy;
+}
+
+@mixin lh-solid-gts {
+  @media #{$breakpoint-not-small} {
+    line-height: $line-height-solid;
+  }
+}
+
+@mixin lh-title-gts {
+  @media #{$breakpoint-not-small} {
+    line-height: $line-height-title;
+  }
+}
+
+@mixin lh-copy-gts {
+  @media #{$breakpoint-not-small} {
+    line-height: $line-height-copy;
+  }
+}
+
+@mixin lh-solid-m {
+  @media #{$breakpoint-medium} {
+    line-height: $line-height-solid;
+  }
+}
+
+@mixin lh-title-m {
+  @media #{$breakpoint-medium} {
+    line-height: $line-height-title;
+  }
+}
+
+@mixin lh-copy-m {
+  @media #{$breakpoint-medium} {
+    line-height: $line-height-copy;
+  }
+}
+
+@mixin lh-solid-l {
+  @media #{$breakpoint-large} {
+    line-height: $line-height-solid;
+  }
+}
+
+@mixin lh-title-l {
+  @media #{$breakpoint-large} {
+    line-height: $line-height-title;
+  }
+}
+
+@mixin lh-copy-l {
+  @media #{$breakpoint-large} {
+    line-height: $line-height-copy;
+  }
+}

@@ -1,0 +1,107 @@
+/**
+   BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Depends on base border module in _borders.css
+
+   Base:
+     b = border-style
+
+   Modifiers:
+     --none   = none
+     --dotted = dotted
+     --dashed = dashed
+     --solid  = solid
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = larges
+**/
+@mixin b--dotted {
+  border-style: dotted;
+}
+
+@mixin b--dashed {
+  border-style: dashed;
+}
+
+@mixin b--solid {
+  border-style: solid;
+}
+
+@mixin b--none {
+  border-style: none;
+}
+
+@mixin b--dotted-gts {
+  @media #{$breakpoint-not-small} {
+    border-style: dotted;
+  }
+}
+
+@mixin b--dashed-gts {
+  @media #{$breakpoint-not-small} {
+    border-style: dashed;
+  }
+}
+
+@mixin b--solid-gts {
+  @media #{$breakpoint-not-small} {
+    border-style: solid;
+  }
+}
+
+@mixin b--none-gts {
+  @media #{$breakpoint-not-small} {
+    border-style: none;
+  }
+}
+
+@mixin b--dotted-m {
+  @media #{$breakpoint-medium} {
+    border-style: dotted;
+  }
+}
+
+@mixin b--dashed-m {
+  @media #{$breakpoint-medium} {
+    border-style: dashed;
+  }
+}
+
+@mixin b--solid-m {
+  @media #{$breakpoint-medium} {
+    border-style: solid;
+  }
+}
+
+@mixin b--none-m {
+  @media #{$breakpoint-medium} {
+    border-style: none;
+  }
+}
+
+@mixin b--dotted-l {
+  @media #{$breakpoint-large} {
+    border-style: dotted;
+  }
+}
+
+@mixin b--dashed-l {
+  @media #{$breakpoint-large} {
+    border-style: dashed;
+  }
+}
+
+@mixin b--solid-l {
+  @media #{$breakpoint-large} {
+    border-style: solid;
+  }
+}
+
+@mixin b--none-l {
+  @media #{$breakpoint-large} {
+    border-style: none;
+  }
+}

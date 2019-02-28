@@ -1,0 +1,475 @@
+/**
+   SKINS
+   Docs: http://tachyons.io/docs/themes/skins/
+
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
+**/
+
+/* Text colors */
+@mixin black-90 {
+  color: $black-90;
+}
+
+@mixin black-80 {
+  color: $black-80;
+}
+
+@mixin black-70 {
+  color: $black-70;
+}
+
+@mixin black-60 {
+  color: $black-60;
+}
+
+@mixin black-50 {
+  color: $black-50;
+}
+
+@mixin black-40 {
+  color: $black-40;
+}
+
+@mixin black-30 {
+  color: $black-30;
+}
+
+@mixin black-20 {
+  color: $black-20;
+}
+
+@mixin black-10 {
+  color: $black-10;
+}
+
+@mixin black-05 {
+  color: $black-05;
+}
+
+@mixin white-90 {
+  color: $white-90;
+}
+
+@mixin white-80 {
+  color: $white-80;
+}
+
+@mixin white-70 {
+  color: $white-70;
+}
+
+@mixin white-60 {
+  color: $white-60;
+}
+
+@mixin white-50 {
+  color: $white-50;
+}
+
+@mixin white-40 {
+  color: $white-40;
+}
+
+@mixin white-30 {
+  color: $white-30;
+}
+
+@mixin white-20 {
+  color: $white-20;
+}
+
+@mixin white-10 {
+  color: $white-10;
+}
+
+@mixin black {
+  color: $black;
+}
+
+@mixin near-black {
+  color: $near-black;
+}
+
+@mixin dark-gray {
+  color: $dark-gray;
+}
+
+@mixin mid-gray {
+  color: $mid-gray;
+}
+
+@mixin gray {
+  color: $gray;
+}
+
+@mixin silver {
+  color: $silver;
+}
+
+@mixin light-silver {
+  color: $light-silver;
+}
+
+@mixin moon-gray {
+  color: $moon-gray;
+}
+
+@mixin light-gray {
+  color: $light-gray;
+}
+
+@mixin near-white {
+  color: $near-white;
+}
+
+@mixin white {
+  color: $white;
+}
+
+@mixin color-initial {
+  color: initial;
+}
+
+@mixin dark-red {
+  color: $dark-red;
+}
+
+@mixin red {
+  color: $red;
+}
+
+@mixin light-red {
+  color: $light-red;
+}
+
+@mixin orange {
+  color: $orange;
+}
+
+@mixin gold {
+  color: $gold;
+}
+
+@mixin yellow {
+  color: $yellow;
+}
+
+@mixin light-yellow {
+  color: $light-yellow;
+}
+
+@mixin purple {
+  color: $purple;
+}
+
+@mixin light-purple {
+  color: $light-purple;
+}
+
+@mixin dark-pink {
+  color: $dark-pink;
+}
+
+@mixin hot-pink {
+  color: $hot-pink;
+}
+
+@mixin pink {
+  color: $pink;
+}
+
+@mixin light-pink {
+  color: $light-pink;
+}
+
+@mixin dark-green {
+  color: $dark-green;
+}
+
+@mixin green {
+  color: $green;
+}
+
+@mixin light-green {
+  color: $light-green;
+}
+
+@mixin navy {
+  color: $navy;
+}
+
+@mixin dark-blue {
+  color: $dark-blue;
+}
+
+@mixin blue {
+  color: $blue;
+}
+
+@mixin light-blue {
+  color: $light-blue;
+}
+
+@mixin lightest-blue {
+  color: $lightest-blue;
+}
+
+@mixin washed-blue {
+  color: $washed-blue;
+}
+
+@mixin washed-green {
+  color: $washed-green;
+}
+
+@mixin washed-yellow {
+  color: $washed-yellow;
+}
+
+@mixin washed-red {
+  color: $washed-red;
+}
+
+@mixin color-inherit {
+  color: inherit;
+}
+
+@mixin bg-black-90 {
+  background-color: $black-90;
+}
+
+@mixin bg-black-80 {
+  background-color: $black-80;
+}
+
+@mixin bg-black-70 {
+  background-color: $black-70;
+}
+
+@mixin bg-black-60 {
+  background-color: $black-60;
+}
+
+@mixin bg-black-50 {
+  background-color: $black-50;
+}
+
+@mixin bg-black-40 {
+  background-color: $black-40;
+}
+
+@mixin bg-black-30 {
+  background-color: $black-30;
+}
+
+@mixin bg-black-20 {
+  background-color: $black-20;
+}
+
+@mixin bg-black-10 {
+  background-color: $black-10;
+}
+
+@mixin bg-black-05 {
+  background-color: $black-05;
+}
+
+@mixin bg-white-90 {
+  background-color: $white-90;
+}
+
+@mixin bg-white-80 {
+  background-color: $white-80;
+}
+
+@mixin bg-white-70 {
+  background-color: $white-70;
+}
+
+@mixin bg-white-60 {
+  background-color: $white-60;
+}
+
+@mixin bg-white-50 {
+  background-color: $white-50;
+}
+
+@mixin bg-white-40 {
+  background-color: $white-40;
+}
+
+@mixin bg-white-30 {
+  background-color: $white-30;
+}
+
+@mixin bg-white-20 {
+  background-color: $white-20;
+}
+
+@mixin bg-white-10 {
+  background-color: $white-10;
+}
+
+/* Background colors */
+
+@mixin bg-black {
+  background-color: $black;
+}
+
+@mixin bg-near-black {
+  background-color: $near-black;
+}
+
+@mixin bg-dark-gray {
+  background-color: $dark-gray;
+}
+
+@mixin bg-mid-gray {
+  background-color: $mid-gray;
+}
+
+@mixin bg-gray {
+  background-color: $gray;
+}
+
+@mixin bg-silver {
+  background-color: $silver;
+}
+
+@mixin bg-light-silver {
+  background-color: $light-silver;
+}
+
+@mixin bg-moon-gray {
+  background-color: $moon-gray;
+}
+
+@mixin bg-light-gray {
+  background-color: $light-gray;
+}
+
+@mixin bg-near-white {
+  background-color: $near-white;
+}
+
+@mixin bg-white {
+  background-color: $white;
+}
+
+@mixin bg-transparent {
+  background-color: $transparent;
+}
+
+@mixin bg-primary {
+  background-color: $color-primary;
+}
+
+@mixin bg-secondary {
+  background-color: $color-secondary;
+}
+
+@mixin bg-dark-red {
+  background-color: $dark-red;
+}
+
+@mixin bg-red {
+  background-color: $red;
+}
+
+@mixin bg-light-red {
+  background-color: $light-red;
+}
+
+@mixin bg-orange {
+  background-color: $orange;
+}
+
+@mixin bg-gold {
+  background-color: $gold;
+}
+
+@mixin bg-yellow {
+  background-color: $yellow;
+}
+
+@mixin bg-light-yellow {
+  background-color: $light-yellow;
+}
+
+@mixin bg-purple {
+  background-color: $purple;
+}
+
+@mixin bg-light-purple {
+  background-color: $light-purple;
+}
+
+@mixin bg-dark-pink {
+  background-color: $dark-pink;
+}
+
+@mixin bg-hot-pink {
+  background-color: $hot-pink;
+}
+
+@mixin bg-pink {
+  background-color: $pink;
+}
+
+@mixin bg-light-pink {
+  background-color: $light-pink;
+}
+
+@mixin bg-dark-green {
+  background-color: $dark-green;
+}
+
+@mixin bg-green {
+  background-color: $green;
+}
+
+@mixin bg-light-green {
+  background-color: $light-green;
+}
+
+@mixin bg-navy {
+  background-color: $navy;
+}
+
+@mixin bg-dark-blue {
+  background-color: $dark-blue;
+}
+
+@mixin bg-blue {
+  background-color: $blue;
+}
+
+@mixin bg-light-blue {
+  background-color: $light-blue;
+}
+
+@mixin bg-lightest-blue {
+  background-color: $lightest-blue;
+}
+
+@mixin bg-washed-blue {
+  background-color: $washed-blue;
+}
+
+@mixin bg-washed-green {
+  background-color: $washed-green;
+}
+
+@mixin bg-washed-yellow {
+  background-color: $washed-yellow;
+}
+
+@mixin bg-washed-red {
+  background-color: $washed-red;
+}
+
+@mixin bg-inherit {
+  background-color: inherit;
+}

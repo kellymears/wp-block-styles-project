@@ -1,0 +1,265 @@
+/**
+   FONT WEIGHT
+   Docs: http://tachyons.io/docs/typography/font-weight/
+
+   Base
+     fw = font-weight
+
+   Modifiers:
+     1 = literal value 100
+     2 = literal value 200
+     3 = literal value 300
+     4 = literal value 400
+     5 = literal value 500
+     6 = literal value 600
+     7 = literal value 700
+     8 = literal value 800
+     9 = literal value 900
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+@mixin normal {
+  font-weight: normal;
+}
+
+@mixin b {
+  font-weight: bold;
+}
+
+@mixin fw1 {
+  font-weight: 100;
+}
+
+@mixin fw2 {
+  font-weight: 200;
+}
+
+@mixin fw3 {
+  font-weight: 300;
+}
+
+@mixin fw4 {
+  font-weight: 400;
+}
+
+@mixin fw5 {
+  font-weight: 500;
+}
+
+@mixin fw6 {
+  font-weight: 600;
+}
+
+@mixin fw7 {
+  font-weight: 700;
+}
+
+@mixin fw8 {
+  font-weight: 800;
+}
+
+@mixin fw9 {
+  font-weight: 900;
+}
+
+@mixin normal-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: normal;
+  }
+}
+
+@mixin b-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: bold;
+  }
+}
+
+@mixin fw1-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 100;
+  }
+}
+
+@mixin fw2-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 200;
+  }
+}
+
+@mixin fw3-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 300;
+  }
+}
+
+@mixin fw4-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 400;
+  }
+}
+
+@mixin fw5-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 500;
+  }
+}
+
+@mixin fw6-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 600;
+  }
+}
+
+@mixin fw7-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 700;
+  }
+}
+
+@mixin fw8-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 800;
+  }
+}
+
+@mixin fw9-gts {
+  @media #{$breakpoint-not-small} {
+    font-weight: 900;
+  }
+}
+
+@mixin normal-m {
+  @media #{$breakpoint-medium} {
+    font-weight: normal;
+  }
+}
+
+@mixin b-m {
+  @media #{$breakpoint-medium} {
+    font-weight: bold;
+  }
+}
+
+@mixin fw1-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 100;
+  }
+}
+
+@mixin fw2-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 200;
+  }
+}
+
+@mixin fw3-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 300;
+  }
+}
+
+@mixin fw4-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 400;
+  }
+}
+
+@mixin fw5-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 500;
+  }
+}
+
+@mixin fw6-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 600;
+  }
+}
+
+@mixin fw7-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 700;
+  }
+}
+
+@mixin fw8-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 800;
+  }
+}
+
+@mixin fw9-m {
+  @media #{$breakpoint-medium} {
+    font-weight: 900;
+  }
+}
+
+@mixin normal-l {
+  @media #{$breakpoint-large} {
+    font-weight: normal;
+  }
+}
+
+@mixin b-l {
+  @media #{$breakpoint-large} {
+    font-weight: bold;
+  }
+}
+
+@mixin fw1-l {
+  @media #{$breakpoint-large} {
+    font-weight: 100;
+  }
+}
+
+@mixin fw2-l {
+  @media #{$breakpoint-large} {
+    font-weight: 200;
+  }
+}
+
+@mixin fw3-l {
+  @media #{$breakpoint-large} {
+    font-weight: 300;
+  }
+}
+
+@mixin fw4-l {
+  @media #{$breakpoint-large} {
+    font-weight: 400;
+  }
+}
+
+@mixin fw5-l {
+  @media #{$breakpoint-large} {
+    font-weight: 500;
+  }
+}
+
+@mixin fw6-l {
+  @media #{$breakpoint-large} {
+    font-weight: 600;
+  }
+}
+
+@mixin fw7-l {
+  @media #{$breakpoint-large} {
+    font-weight: 700;
+  }
+}
+
+@mixin fw8-l {
+  @media #{$breakpoint-large} {
+    font-weight: 800;
+  }
+}
+
+@mixin fw9-l {
+  @media #{$breakpoint-large} {
+    font-weight: 900;
+  }
+}

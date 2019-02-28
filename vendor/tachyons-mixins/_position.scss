@@ -1,0 +1,120 @@
+/**
+   POSITIONING
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+*/
+@mixin static {
+  position: static;
+}
+
+@mixin relative {
+  position: relative;
+}
+
+@mixin absolute {
+  position: absolute;
+}
+
+@mixin fixed {
+  position: fixed;
+}
+
+@mixin static-gts {
+  @media #{$breakpoint-not-small} {
+    position: static;
+  }
+}
+
+@mixin relative-gts {
+  @media #{$breakpoint-not-small} {
+    position: relative;
+  }
+}
+
+@mixin absolute-gts {
+  @media #{$breakpoint-not-small} {
+    position: absolute;
+  }
+}
+
+@mixin fixed-gts {
+  @media #{$breakpoint-not-small} {
+    position: fixed;
+  }
+}
+
+@mixin static-m {
+  @media #{$breakpoint-medium} {
+    position: static;
+  }
+}
+
+@mixin relative-m {
+  @media #{$breakpoint-medium} {
+    position: relative;
+  }
+}
+
+@mixin absolute-m {
+  @media #{$breakpoint-medium} {
+    position: absolute;
+  }
+}
+
+@mixin fixed-m {
+  @media #{$breakpoint-medium} {
+    position: fixed;
+  }
+}
+
+@mixin static-l {
+  @media #{$breakpoint-large} {
+    position: static;
+  }
+}
+
+@mixin relative-l {
+  @media #{$breakpoint-large} {
+    position: relative;
+  }
+}
+
+@mixin absolute-l {
+  @media #{$breakpoint-large} {
+    position: absolute;
+  }
+}
+
+@mixin fixed-l {
+  @media #{$breakpoint-large} {
+    position: fixed;
+  }
+}
+
+@mixin middle {
+  bottom: 50%;
+}
+
+@mixin center {
+  left: 50%;
+}
+
+@mixin bottom {
+  bottom: 0%;
+}
+
+@mixin top {
+  top: 0%;
+}
+
+@mixin left {
+  left: 0;
+}
+
+@mixin right {
+  right: 0;
+}

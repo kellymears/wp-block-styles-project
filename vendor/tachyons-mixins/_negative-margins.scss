@@ -1,0 +1,796 @@
+/**
+   NEGATIVE MARGINS
+
+   Base:
+     n = negative
+
+   Modifiers:
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+@mixin na1 {
+  margin: -$spacing-extra-small;
+}
+
+@mixin na2 {
+  margin: -$spacing-small;
+}
+
+@mixin na3 {
+  margin: -$spacing-medium;
+}
+
+@mixin na4 {
+  margin: -$spacing-large;
+}
+
+@mixin na5 {
+  margin: -$spacing-extra-large;
+}
+
+@mixin na6 {
+  margin: -$spacing-extra-extra-large;
+}
+
+@mixin na7 {
+  margin: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nl1 {
+  margin-left: -$spacing-extra-small;
+}
+
+@mixin nl2 {
+  margin-left: -$spacing-small;
+}
+
+@mixin nl3 {
+  margin-left: -$spacing-medium;
+}
+
+@mixin nl4 {
+  margin-left: -$spacing-large;
+}
+
+@mixin nl5 {
+  margin-left: -$spacing-extra-large;
+}
+
+@mixin nl6 {
+  margin-left: -$spacing-extra-extra-large;
+}
+
+@mixin nl7 {
+  margin-left: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nr1 {
+  margin-right: -$spacing-extra-small;
+}
+
+@mixin nr2 {
+  margin-right: -$spacing-small;
+}
+
+@mixin nr3 {
+  margin-right: -$spacing-medium;
+}
+
+@mixin nr4 {
+  margin-right: -$spacing-large;
+}
+
+@mixin nr5 {
+  margin-right: -$spacing-extra-large;
+}
+
+@mixin nr6 {
+  margin-right: -$spacing-extra-extra-large;
+}
+
+@mixin nr7 {
+  margin-right: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nb1 {
+  margin-bottom: -$spacing-extra-small;
+}
+
+@mixin nb2 {
+  margin-bottom: -$spacing-small;
+}
+
+@mixin nb3 {
+  margin-bottom: -$spacing-medium;
+}
+
+@mixin nb4 {
+  margin-bottom: -$spacing-large;
+}
+
+@mixin nb5 {
+  margin-bottom: -$spacing-extra-large;
+}
+
+@mixin nb6 {
+  margin-bottom: -$spacing-extra-extra-large;
+}
+
+@mixin nb7 {
+  margin-bottom: -$spacing-extra-extra-extra-large;
+}
+
+@mixin nt1 {
+  margin-top: -$spacing-extra-small;
+}
+
+@mixin nt2 {
+  margin-top: -$spacing-small;
+}
+
+@mixin nt3 {
+  margin-top: -$spacing-medium;
+}
+
+@mixin nt4 {
+  margin-top: -$spacing-large;
+}
+
+@mixin nt5 {
+  margin-top: -$spacing-extra-large;
+}
+
+@mixin nt6 {
+  margin-top: -$spacing-extra-extra-large;
+}
+
+@mixin nt7 {
+  margin-top: -$spacing-extra-extra-extra-large;
+}
+
+@mixin na1-gts {
+  @media #{$breakpoint-not-small} {
+    margin: -$spacing-extra-small;
+  }
+}
+
+@mixin na2-gts {
+  @media #{$breakpoint-not-small} {
+    margin: -$spacing-small;
+  }
+}
+
+@mixin na3-gts {
+  @media #{$breakpoint-not-small} {
+    margin: -$spacing-medium;
+  }
+}
+
+@mixin na4-gts {
+  @media #{$breakpoint-not-small} {
+    margin: -$spacing-large;
+  }
+}
+
+@mixin na5-gts {
+  @media #{$breakpoint-not-small} {
+    margin: -$spacing-extra-large;
+  }
+}
+
+@mixin na6-gts {
+  @media #{$breakpoint-not-small} {
+    margin: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin na7-gts {
+  @media #{$breakpoint-not-small} {
+    margin: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nl1-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: -$spacing-extra-small;
+  }
+}
+
+@mixin nl2-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: -$spacing-small;
+  }
+}
+
+@mixin nl3-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: -$spacing-medium;
+  }
+}
+
+@mixin nl4-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: -$spacing-large;
+  }
+}
+
+@mixin nl5-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: -$spacing-extra-large;
+  }
+}
+
+@mixin nl6-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nl7-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nr1-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: -$spacing-extra-small;
+  }
+}
+
+@mixin nr2-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: -$spacing-small;
+  }
+}
+
+@mixin nr3-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: -$spacing-medium;
+  }
+}
+
+@mixin nr4-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: -$spacing-large;
+  }
+}
+
+@mixin nr5-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: -$spacing-extra-large;
+  }
+}
+
+@mixin nr6-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nr7-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nb1-gts {
+  @media #{$breakpoint-not-small} {
+    margin-bottom: -$spacing-extra-small;
+  }
+}
+
+@mixin nb2-gts {
+  @media #{$breakpoint-not-small} {
+    margin-bottom: -$spacing-small;
+  }
+}
+
+@mixin nb3-gts {
+  @media #{$breakpoint-not-small} {
+    margin-bottom: -$spacing-medium;
+  }
+}
+
+@mixin nb4-gts {
+  @media #{$breakpoint-not-small} {
+    margin-bottom: -$spacing-large;
+  }
+}
+
+@mixin nb5-gts {
+  @media #{$breakpoint-not-small} {
+    margin-bottom: -$spacing-extra-large;
+  }
+}
+
+@mixin nb6-gts {
+  @media #{$breakpoint-not-small} {
+    margin-bottom: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nb7-gts {
+  @media #{$breakpoint-not-small} {
+    margin-bottom: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nt1-gts {
+  @media #{$breakpoint-not-small} {
+    margin-top: -$spacing-extra-small;
+  }
+}
+
+@mixin nt2-gts {
+  @media #{$breakpoint-not-small} {
+    margin-top: -$spacing-small;
+  }
+}
+
+@mixin nt3-gts {
+  @media #{$breakpoint-not-small} {
+    margin-top: -$spacing-medium;
+  }
+}
+
+@mixin nt4-gts {
+  @media #{$breakpoint-not-small} {
+    margin-top: -$spacing-large;
+  }
+}
+
+@mixin nt5-gts {
+  @media #{$breakpoint-not-small} {
+    margin-top: -$spacing-extra-large;
+  }
+}
+
+@mixin nt6-gts {
+  @media #{$breakpoint-not-small} {
+    margin-top: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nt7-gts {
+  @media #{$breakpoint-not-small} {
+    margin-top: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin na1-m {
+  @media #{$breakpoint-medium} {
+    margin: -$spacing-extra-small;
+  }
+}
+
+@mixin na2-m {
+  @media #{$breakpoint-medium} {
+    margin: -$spacing-small;
+  }
+}
+
+@mixin na3-m {
+  @media #{$breakpoint-medium} {
+    margin: -$spacing-medium;
+  }
+}
+
+@mixin na4-m {
+  @media #{$breakpoint-medium} {
+    margin: -$spacing-large;
+  }
+}
+
+@mixin na5-m {
+  @media #{$breakpoint-medium} {
+    margin: -$spacing-extra-large;
+  }
+}
+
+@mixin na6-m {
+  @media #{$breakpoint-medium} {
+    margin: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin na7-m {
+  @media #{$breakpoint-medium} {
+    margin: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nl1-m {
+  @media #{$breakpoint-medium} {
+    margin-left: -$spacing-extra-small;
+  }
+}
+
+@mixin nl2-m {
+  @media #{$breakpoint-medium} {
+    margin-left: -$spacing-small;
+  }
+}
+
+@mixin nl3-m {
+  @media #{$breakpoint-medium} {
+    margin-left: -$spacing-medium;
+  }
+}
+
+@mixin nl4-m {
+  @media #{$breakpoint-medium} {
+    margin-left: -$spacing-large;
+  }
+}
+
+@mixin nl5-m {
+  @media #{$breakpoint-medium} {
+    margin-left: -$spacing-extra-large;
+  }
+}
+
+@mixin nl6-m {
+  @media #{$breakpoint-medium} {
+    margin-left: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nl7-m {
+  @media #{$breakpoint-medium} {
+    margin-left: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nr1-m {
+  @media #{$breakpoint-medium} {
+    margin-right: -$spacing-extra-small;
+  }
+}
+
+@mixin nr2-m {
+  @media #{$breakpoint-medium} {
+    margin-right: -$spacing-small;
+  }
+}
+
+@mixin nr3-m {
+  @media #{$breakpoint-medium} {
+    margin-right: -$spacing-medium;
+  }
+}
+
+@mixin nr4-m {
+  @media #{$breakpoint-medium} {
+    margin-right: -$spacing-large;
+  }
+}
+
+@mixin nr5-m {
+  @media #{$breakpoint-medium} {
+    margin-right: -$spacing-extra-large;
+  }
+}
+
+@mixin nr6-m {
+  @media #{$breakpoint-medium} {
+    margin-right: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nr7-m {
+  @media #{$breakpoint-medium} {
+    margin-right: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nb1-m {
+  @media #{$breakpoint-medium} {
+    margin-bottom: -$spacing-extra-small;
+  }
+}
+
+@mixin nb2-m {
+  @media #{$breakpoint-medium} {
+    margin-bottom: -$spacing-small;
+  }
+}
+
+@mixin nb3-m {
+  @media #{$breakpoint-medium} {
+    margin-bottom: -$spacing-medium;
+  }
+}
+
+@mixin nb4-m {
+  @media #{$breakpoint-medium} {
+    margin-bottom: -$spacing-large;
+  }
+}
+
+@mixin nb5-m {
+  @media #{$breakpoint-medium} {
+    margin-bottom: -$spacing-extra-large;
+  }
+}
+
+@mixin nb6-m {
+  @media #{$breakpoint-medium} {
+    margin-bottom: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nb7-m {
+  @media #{$breakpoint-medium} {
+    margin-bottom: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nt1-m {
+  @media #{$breakpoint-medium} {
+    margin-top: -$spacing-extra-small;
+  }
+}
+
+@mixin nt2-m {
+  @media #{$breakpoint-medium} {
+    margin-top: -$spacing-small;
+  }
+}
+
+@mixin nt3-m {
+  @media #{$breakpoint-medium} {
+    margin-top: -$spacing-medium;
+  }
+}
+
+@mixin nt4-m {
+  @media #{$breakpoint-medium} {
+    margin-top: -$spacing-large;
+  }
+}
+
+@mixin nt5-m {
+  @media #{$breakpoint-medium} {
+    margin-top: -$spacing-extra-large;
+  }
+}
+
+@mixin nt6-m {
+  @media #{$breakpoint-medium} {
+    margin-top: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nt7-m {
+  @media #{$breakpoint-medium} {
+    margin-top: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin na1-l {
+  @media #{$breakpoint-large} {
+    margin: -$spacing-extra-small;
+  }
+}
+
+@mixin na2-l {
+  @media #{$breakpoint-large} {
+    margin: -$spacing-small;
+  }
+}
+
+@mixin na3-l {
+  @media #{$breakpoint-large} {
+    margin: -$spacing-medium;
+  }
+}
+
+@mixin na4-l {
+  @media #{$breakpoint-large} {
+    margin: -$spacing-large;
+  }
+}
+
+@mixin na5-l {
+  @media #{$breakpoint-large} {
+    margin: -$spacing-extra-large;
+  }
+}
+
+@mixin na6-l {
+  @media #{$breakpoint-large} {
+    margin: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin na7-l {
+  @media #{$breakpoint-large} {
+    margin: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nl1-l {
+  @media #{$breakpoint-large} {
+    margin-left: -$spacing-extra-small;
+  }
+}
+
+@mixin nl2-l {
+  @media #{$breakpoint-large} {
+    margin-left: -$spacing-small;
+  }
+}
+
+@mixin nl3-l {
+  @media #{$breakpoint-large} {
+    margin-left: -$spacing-medium;
+  }
+}
+
+@mixin nl4-l {
+  @media #{$breakpoint-large} {
+    margin-left: -$spacing-large;
+  }
+}
+
+@mixin nl5-l {
+  @media #{$breakpoint-large} {
+    margin-left: -$spacing-extra-large;
+  }
+}
+
+@mixin nl6-l {
+  @media #{$breakpoint-large} {
+    margin-left: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nl7-l {
+  @media #{$breakpoint-large} {
+    margin-left: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nr1-l {
+  @media #{$breakpoint-large} {
+    margin-right: -$spacing-extra-small;
+  }
+}
+
+@mixin nr2-l {
+  @media #{$breakpoint-large} {
+    margin-right: -$spacing-small;
+  }
+}
+
+@mixin nr3-l {
+  @media #{$breakpoint-large} {
+    margin-right: -$spacing-medium;
+  }
+}
+
+@mixin nr4-l {
+  @media #{$breakpoint-large} {
+    margin-right: -$spacing-large;
+  }
+}
+
+@mixin nr5-l {
+  @media #{$breakpoint-large} {
+    margin-right: -$spacing-extra-large;
+  }
+}
+
+@mixin nr6-l {
+  @media #{$breakpoint-large} {
+    margin-right: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nr7-l {
+  @media #{$breakpoint-large} {
+    margin-right: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nb1-l {
+  @media #{$breakpoint-large} {
+    margin-bottom: -$spacing-extra-small;
+  }
+}
+
+@mixin nb2-l {
+  @media #{$breakpoint-large} {
+    margin-bottom: -$spacing-small;
+  }
+}
+
+@mixin nb3-l {
+  @media #{$breakpoint-large} {
+    margin-bottom: -$spacing-medium;
+  }
+}
+
+@mixin nb4-l {
+  @media #{$breakpoint-large} {
+    margin-bottom: -$spacing-large;
+  }
+}
+
+@mixin nb5-l {
+  @media #{$breakpoint-large} {
+    margin-bottom: -$spacing-extra-large;
+  }
+}
+
+@mixin nb6-l {
+  @media #{$breakpoint-large} {
+    margin-bottom: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nb7-l {
+  @media #{$breakpoint-large} {
+    margin-bottom: -$spacing-extra-extra-extra-large;
+  }
+}
+
+@mixin nt1-l {
+  @media #{$breakpoint-large} {
+    margin-top: -$spacing-extra-small;
+  }
+}
+
+@mixin nt2-l {
+  @media #{$breakpoint-large} {
+    margin-top: -$spacing-small;
+  }
+}
+
+@mixin nt3-l {
+  @media #{$breakpoint-large} {
+    margin-top: -$spacing-medium;
+  }
+}
+
+@mixin nt4-l {
+  @media #{$breakpoint-large} {
+    margin-top: -$spacing-large;
+  }
+}
+
+@mixin nt5-l {
+  @media #{$breakpoint-large} {
+    margin-top: -$spacing-extra-large;
+  }
+}
+
+@mixin nt6-l {
+  @media #{$breakpoint-large} {
+    margin-top: -$spacing-extra-extra-large;
+  }
+}
+
+@mixin nt7-l {
+  @media #{$breakpoint-large} {
+    margin-top: -$spacing-extra-extra-extra-large;
+  }
+}

@@ -1,0 +1,83 @@
+/**
+   UTILITIES
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+/* Equivalent to @mixin overflow-y-scroll */
+@mixin overflow-container {
+  overflow-y: scroll;
+}
+
+@mixin center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin mr-auto {
+  margin-right: auto;
+}
+
+@mixin ml-auto {
+  margin-left: auto;
+}
+
+@mixin center-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@mixin mr-auto-gts {
+  @media #{$breakpoint-not-small} {
+    margin-right: auto;
+  }
+}
+
+@mixin ml-auto-gts {
+  @media #{$breakpoint-not-small} {
+    margin-left: auto;
+  }
+}
+
+@mixin center-m {
+  @media #{$breakpoint-medium} {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@mixin mr-auto-m {
+  @media #{$breakpoint-medium} {
+    margin-right: auto;
+  }
+}
+
+@mixin ml-auto-m {
+  @media #{$breakpoint-medium} {
+    margin-left: auto;
+  }
+}
+
+@mixin center-l {
+  @media #{$breakpoint-large} {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@mixin mr-auto-l {
+  @media #{$breakpoint-large} {
+    margin-right: auto;
+  }
+}
+
+@mixin ml-auto-l {
+  @media #{$breakpoint-large} {
+    margin-left: auto;
+  }
+}

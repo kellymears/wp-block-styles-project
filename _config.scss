@@ -105,9 +105,10 @@ $wp-blocks-options: (
 
     settings: (
       console: true, // output debug logs to console
-      outlineEnabled:  true,  // draw border around elements
-      outlineColor: hsla(215, 100%, 49%, 0.2), // border color
-      gridEnabled: true,
+      outlineEnabled:  false,  // shade elements & their boundaries
+      outlineColor: hsla(0, 0%, 0%, 0.1), // outline base color
+      gridEnabled: true, // grid overlay to assist alignments
+      elementEnabled: true, // semantic colorized borders
     ),
   ),
 );

@@ -1,0 +1,53 @@
+/**
+   FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+@mixin i {
+  font-style: italic;
+}
+
+@mixin fs-normal {
+  font-style: normal;
+}
+
+@mixin i-gts {
+  @media #{$breakpoint-not-small} {
+    font-style: italic;
+  }
+}
+
+@mixin fs-normal-gts {
+  @media #{$breakpoint-not-small} {
+    font-style: normal;
+  }
+}
+
+@mixin i-m {
+  @media #{$breakpoint-medium} {
+    font-style: italic;
+  }
+}
+
+@mixin fs-normal-m {
+  @media #{$breakpoint-medium} {
+    font-style: normal;
+  }
+}
+
+@mixin i-l {
+  @media #{$breakpoint-large} {
+    font-style: italic;
+  }
+}
+
+@mixin fs-normal-l {
+  @media #{$breakpoint-large} {
+    font-style: normal;
+  }
+}

@@ -1,0 +1,44 @@
+.wp-block-image {
+  figure {
+    @include ma0;
+    @include pa0;
+
+    > figcaption {
+      @include pt2;
+      @include pr2;
+      @include f7;
+      @include i;
+      @include tc;
+    }
+
+    &.alignleft {
+      > img {
+        @include fl;
+        @include mt2;
+        @include mr4;
+      }
+
+      > figure {
+        @include cl;
+      }
+    }
+
+    &.alignright {
+      > img,
+      > figcaption {
+        @include fr;
+        @include mt2;
+        @include ml4;
+      }
+
+      > figcaption {
+        @include dib;
+        @include cr;
+      }
+    }
+
+    &.aligncenter {
+      @include tc;
+    }
+  }
+}

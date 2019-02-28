@@ -1,0 +1,98 @@
+.wp-block-quote {
+  @include b--secondary;
+
+  > * {
+    @include f6;
+    @include ph4;
+  }
+
+  &.is-large {
+    @include b--primary;
+
+    > * {
+      @include f4;
+      @include ph4;
+    }
+  }
+}
+
+.wp-block-pullquote {
+  > blockquote {
+    @include b--light-gray;
+
+    > p {
+      @include mt0;
+    }
+  }
+
+  &.alignwide,
+  &.alignfull {
+    @include db;
+
+    > blockquote {
+      @include pv5;
+      @include bt;
+      @include bb;
+      @include bw1;
+      @include bl-0;
+      @include br-0;
+
+      > p,
+      > cite {
+        @include db;
+        @include tc;
+      }
+
+      > p {
+        @include f3;
+        @include fw2;
+      }
+
+      > cite {
+        @include ttu;
+        @include fs-normal;
+        @include fw6;
+      }
+
+      @media #{$breakpoint-large} {
+        @include ph7;
+      }
+    }
+
+    @media #{$breakpoint-large} {
+      @include pv4;
+    }
+  }
+
+  &.alignleft blockquote,
+  &.alignright blockquote {
+    @include b--primary;
+
+    > cite {
+      @include ttu;
+      @include f7;
+      @include fs-normal;
+      @include fw6;
+    }
+  }
+
+  &.alignleft {
+    @include tl;
+
+    > blockquote {
+      @include fl;
+      @include mt2;
+      @include mr4;
+    }
+  }
+
+  &.alignright {
+    @include tr;
+
+    > blockquote {
+      @include fr;
+      @include mt2;
+      @include ml4;
+    }
+  }
+}

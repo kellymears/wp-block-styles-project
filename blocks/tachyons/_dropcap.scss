@@ -1,0 +1,7 @@
+> .has-drop-cap::first-letter {
+  @include f-subheadline;
+  @include fl;
+  @include mr3;
+
+  line-height: 4.4rem;
+}

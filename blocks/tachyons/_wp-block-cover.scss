@@ -1,0 +1,84 @@
+.wp-block-cover,
+.wp-block-cover-image {
+  @include flex;
+  @include items-center;
+  @include justify-center;
+  @include relative;
+  @include pv7;
+  @include cover;
+  @include bg-center;
+
+  .wp-block-cover-image-text,
+  .wp-block-cover-text,
+  .wp-block-cover-text a {
+    @include pv0;
+    @include f1;
+    @include lh-title;
+    @include relative;
+    @include white;
+    @include z-3;
+
+    a {
+      @include white;
+    }
+  }
+
+  &.has-parallax {
+    background-attachment: fixed;
+  }
+
+  &.has-background-dim::before {
+    @include absolute;
+    @include top;
+    @include right;
+    @include bottom;
+    @include left;
+    @include w-100;
+    @include h-100;
+    @include z-2;
+
+    background-color: rgba($black, 0.5);
+    content: "";
+  }
+
+  @for $i from 1 through 10 {
+    &.has-background-dim.has-background-dim-#{ $i * 10 }::before {
+      background-color: rgba($black, $i * 0.1);
+    }
+  }
+
+  @media #{$breakpoint-large} {
+    &.alignleft {
+      @include fl;
+      @include cl;
+      @include w-40;
+      @include mr4;
+      @include mt0;
+
+      > p {
+        @include tc;
+      }
+    }
+
+    &.alignright {
+      @include fr;
+      @include cr;
+      @include w-40;
+      @include ml4;
+      @include mt0;
+
+      > p {
+        @include tc;
+      }
+    }
+
+    &.aligncenter {
+      @include cb;
+      @include w-100;
+
+      &::before {
+        @include cf;
+      }
+    }
+  }
+}

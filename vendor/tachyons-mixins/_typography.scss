@@ -1,0 +1,162 @@
+/**
+   TYPOGRAPHY
+   http://tachyons.io/docs/typography/measure/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+/* Measure is limited to ~66 characters */
+@mixin measure {
+  max-width: $measure;
+}
+
+/* Measure is limited to ~80 characters */
+@mixin measure-wide {
+  max-width: $measure-wide;
+}
+
+/* Measure is limited to ~45 characters */
+@mixin measure-narrow {
+  max-width: $measure-narrow;
+}
+
+/* Book paragraph style - paragraphs are indented with no vertical spacing. */
+@mixin indent {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@mixin small-caps {
+  font-variant: small-caps;
+}
+
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin measure-gts {
+  @media #{$breakpoint-not-small} {
+    max-width: $measure;
+  }
+}
+
+@mixin measure-wide-gts {
+  @media #{$breakpoint-not-small} {
+    max-width: $measure-wide;
+  }
+}
+
+@mixin measure-narrow-gts {
+  @media #{$breakpoint-not-small} {
+    max-width: $measure-narrow;
+  }
+}
+
+@mixin indent-gts {
+  @media #{$breakpoint-not-small} {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@mixin small-caps-gts {
+  @media #{$breakpoint-not-small} {
+    font-variant: small-caps;
+  }
+}
+
+@mixin truncate-gts {
+  @media #{$breakpoint-not-small} {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@mixin measure-m {
+  @media #{$breakpoint-medium} {
+    max-width: $measure;
+  }
+}
+
+@mixin measure-wide-m {
+  @media #{$breakpoint-medium} {
+    max-width: $measure-wide;
+  }
+}
+
+@mixin measure-narrow-m {
+  @media #{$breakpoint-medium} {
+    max-width: $measure-narrow;
+  }
+}
+
+@mixin indent-m {
+  @media #{$breakpoint-medium} {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@mixin small-caps-m {
+  @media #{$breakpoint-medium} {
+    font-variant: small-caps;
+  }
+}
+
+@mixin truncate-m {
+  @media #{$breakpoint-medium} {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@mixin measure-l {
+  @media #{$breakpoint-large} {
+    max-width: $measure;
+  }
+}
+
+@mixin measure-wide-l {
+  @media #{$breakpoint-large} {
+    max-width: $measure-wide;
+  }
+}
+
+@mixin measure-narrow-l {
+  @media #{$breakpoint-large} {
+    max-width: $measure-narrow;
+  }
+}
+
+@mixin indent-l {
+  @media #{$breakpoint-large} {
+    text-indent: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@mixin small-caps-l {
+  @media #{$breakpoint-large} {
+    font-variant: small-caps;
+  }
+}
+
+@mixin truncate-l {
+  @media #{$breakpoint-large} {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,94 @@
+/*
+   VERTICAL ALIGN
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+*/
+@mixin v-base {
+  vertical-align: baseline;
+}
+
+@mixin v-mid {
+  vertical-align: middle;
+}
+
+@mixin v-top {
+  vertical-align: top;
+}
+
+@mixin v-btm {
+  vertical-align: bottom;
+}
+
+@mixin v-base-gts {
+  @media #{$breakpoint-not-small} {
+    vertical-align: baseline;
+  }
+}
+
+@mixin v-mid-gts {
+  @media #{$breakpoint-not-small} {
+    vertical-align: middle;
+  }
+}
+
+@mixin v-top-gts {
+  @media #{$breakpoint-not-small} {
+    vertical-align: top;
+  }
+}
+
+@mixin v-btm-gts {
+  @media #{$breakpoint-not-small} {
+    vertical-align: bottom;
+  }
+}
+
+@mixin v-base-m {
+  @media #{$breakpoint-medium} {
+    vertical-align: baseline;
+  }
+}
+
+@mixin v-mid-m {
+  @media #{$breakpoint-medium} {
+    vertical-align: middle;
+  }
+}
+
+@mixin v-top-m {
+  @media #{$breakpoint-medium} {
+    vertical-align: top;
+  }
+}
+
+@mixin v-btm-m {
+  @media #{$breakpoint-medium} {
+    vertical-align: bottom;
+  }
+}
+
+@mixin v-base-l {
+  @media #{$breakpoint-large} {
+    vertical-align: baseline;
+  }
+}
+
+@mixin v-mid-l {
+  @media #{$breakpoint-large} {
+    vertical-align: middle;
+  }
+}
+
+@mixin v-top-l {
+  @media #{$breakpoint-large} {
+    vertical-align: top;
+  }
+}
+
+@mixin v-btm-l {
+  @media #{$breakpoint-large} {
+    vertical-align: bottom;
+  }
+}

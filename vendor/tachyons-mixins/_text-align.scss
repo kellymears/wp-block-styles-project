@@ -1,0 +1,90 @@
+/**
+  TEXT-ALIGNMENT
+**/
+@mixin tl {
+  text-align: left;
+}
+
+@mixin tr {
+  text-align: right;
+}
+
+@mixin tc {
+  text-align: center;
+}
+
+@mixin tj {
+  text-align: justify;
+}
+
+@mixin tl-gts {
+  @media #{$breakpoint-not-small} {
+    text-align: left;
+  }
+}
+
+@mixin tr-gts {
+  @media #{$breakpoint-not-small} {
+    text-align: right;
+  }
+}
+
+@mixin tc-gts {
+  @media #{$breakpoint-not-small} {
+    text-align: center;
+  }
+}
+
+@mixin tj-gts {
+  @media #{$breakpoint-not-small} {
+    text-align: justify;
+  }
+}
+
+@mixin tl-m {
+  @media #{$breakpoint-medium} {
+    text-align: left;
+  }
+}
+
+@mixin tr-m {
+  @media #{$breakpoint-medium} {
+    text-align: right;
+  }
+}
+
+@mixin tc-m {
+  @media #{$breakpoint-medium} {
+    text-align: center;
+  }
+}
+
+@mixin tj-m {
+  @media #{$breakpoint-medium} {
+    text-align: justify;
+  }
+}
+
+@mixin tl-l {
+  @media #{$breakpoint-large} {
+    text-align: left;
+  }
+}
+
+@mixin tr-l {
+  @media #{$breakpoint-large} {
+    text-align: right;
+  }
+}
+
+@mixin tc-l {
+  @media #{$breakpoint-large} {
+    text-align: center;
+  }
+}
+
+@mixin tj-l {
+  @media #{$breakpoint-large} {
+    text-align: justify;
+  }
+}

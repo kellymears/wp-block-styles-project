@@ -1,0 +1,105 @@
+/**
+   TEXT TRANSFORM
+   Docs: http://tachyons.io/docs/typography/text-transform/
+
+   Base:
+     tt = text-transform
+
+   Modifiers
+     c = capitalize
+     l = lowercase
+     u = uppercase
+     n = none
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+@mixin ttc {
+  text-transform: capitalize;
+}
+
+@mixin ttl {
+  text-transform: lowercase;
+}
+
+@mixin ttu {
+  text-transform: uppercase;
+}
+
+@mixin ttn {
+  text-transform: none;
+}
+
+@mixin ttc-gts {
+  @media #{$breakpoint-not-small} {
+    text-transform: capitalize;
+  }
+}
+
+@mixin ttl-gts {
+  @media #{$breakpoint-not-small} {
+    text-transform: lowercase;
+  }
+}
+
+@mixin ttu-gts {
+  @media #{$breakpoint-not-small} {
+    text-transform: uppercase;
+  }
+}
+
+@mixin ttn-gts {
+  @media #{$breakpoint-not-small} {
+    text-transform: none;
+  }
+}
+
+@mixin ttc-m {
+  @media #{$breakpoint-medium} {
+    text-transform: capitalize;
+  }
+}
+
+@mixin ttl-m {
+  @media #{$breakpoint-medium} {
+    text-transform: lowercase;
+  }
+}
+
+@mixin ttu-m {
+  @media #{$breakpoint-medium} {
+    text-transform: uppercase;
+  }
+}
+
+@mixin ttn-m {
+  @media #{$breakpoint-medium} {
+    text-transform: none;
+  }
+}
+
+@mixin ttc-l {
+  @media #{$breakpoint-large} {
+    text-transform: capitalize;
+  }
+}
+
+@mixin ttl-l {
+  @media #{$breakpoint-large} {
+    text-transform: lowercase;
+  }
+}
+
+@mixin ttu-l {
+  @media #{$breakpoint-large} {
+    text-transform: uppercase;
+  }
+}
+
+@mixin ttn-l {
+  @media #{$breakpoint-large} {
+    text-transform: none;
+  }
+}

@@ -1,0 +1,74 @@
+/**
+   LETTER SPACING
+   Docs: http://tachyons.io/docs/typography/tracking/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+@mixin tracked {
+  letter-spacing: $letter-spacing-1;
+}
+
+@mixin tracked-tight {
+  letter-spacing: $letter-spacing-tight;
+}
+
+@mixin tracked-mega {
+  letter-spacing: $letter-spacing-2;
+}
+
+@mixin tracked-gts {
+  @media #{$breakpoint-not-small} {
+    letter-spacing: $letter-spacing-1;
+  }
+}
+
+@mixin tracked-tight-gts {
+  @media #{$breakpoint-not-small} {
+    letter-spacing: $letter-spacing-tight;
+  }
+}
+
+@mixin tracked-mega-gts {
+  @media #{$breakpoint-not-small} {
+    letter-spacing: $letter-spacing-2;
+  }
+}
+
+@mixin tracked-m {
+  @media #{$breakpoint-medium} {
+    letter-spacing: $letter-spacing-1;
+  }
+}
+
+@mixin tracked-tight-m {
+  @media #{$breakpoint-medium} {
+    letter-spacing: $letter-spacing-tight;
+  }
+}
+
+@mixin tracked-mega-m {
+  @media #{$breakpoint-medium} {
+    letter-spacing: $letter-spacing-2;
+  }
+}
+
+@mixin tracked-l {
+  @media #{$breakpoint-large} {
+    letter-spacing: $letter-spacing-1;
+  }
+}
+
+@mixin tracked-tight-l {
+  @media #{$breakpoint-large} {
+    letter-spacing: $letter-spacing-tight;
+  }
+}
+
+@mixin tracked-mega-l {
+  @media #{$breakpoint-large} {
+    letter-spacing: $letter-spacing-2;
+  }
+}

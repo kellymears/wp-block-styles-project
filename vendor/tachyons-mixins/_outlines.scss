@@ -1,0 +1,73 @@
+/**
+   OUTLINES
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+@mixin outline {
+  outline: 1px solid;
+}
+
+@mixin outline-transparent {
+  outline: 1px solid transparent;
+}
+
+@mixin outline-0 {
+  outline: 0;
+}
+
+@mixin outline-gts {
+  @media #{$breakpoint-not-small} {
+    outline: 1px solid;
+  }
+}
+
+@mixin outline-transparent-gts {
+  @media #{$breakpoint-not-small} {
+    outline: 1px solid transparent;
+  }
+}
+
+@mixin outline-0-gts {
+  @media #{$breakpoint-not-small} {
+    outline: 0;
+  }
+}
+
+@mixin outline-m {
+  @media #{$breakpoint-medium} {
+    outline: 1px solid;
+  }
+}
+
+@mixin outline-transparent-m {
+  @media #{$breakpoint-medium} {
+    outline: 1px solid transparent;
+  }
+}
+
+@mixin outline-0-m {
+  @media #{$breakpoint-medium} {
+    outline: 0;
+  }
+}
+
+@mixin outline-l {
+  @media #{$breakpoint-large} {
+    outline: 1px solid;
+  }
+}
+
+@mixin outline-transparent-l {
+  @media #{$breakpoint-large} {
+    outline: 1px solid transparent;
+  }
+}
+
+@mixin outline-0-l {
+  @media #{$breakpoint-large} {
+    outline: 0;
+  }
+}

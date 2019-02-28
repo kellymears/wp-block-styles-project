@@ -1,0 +1,23 @@
+/**
+   FORMS
+**/
+@mixin input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@mixin button-reset {
+  ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@mixin no-outline {
+  outline: none;
+}

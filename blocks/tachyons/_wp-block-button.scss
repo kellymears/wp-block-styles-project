@@ -1,13 +1,36 @@
 .wp-block-button {
   .wp-block-button__link {
-    @extend .ph2;
-    @extend .pv1;
-    @extend .bg-black;
-    @extend .white;
-    @extend .ma1;
-    @extend .f4;
-    @extend .no-underline;
-    @extend .fw6;
-    @extend .sans-serif;
+    @include pv3;
+    @include ph4;
+    @include dib;
+    @include mb0;
+    @include bg-light-gray;
+    @include dark-gray;
+    @include lh-solid;
+    @include f6;
+  }
+
+  &.alignleft {
+    @include tl;
+
+    > .wp-block-button__link {
+      @include fl;
+      @include mt2;
+      @include mr4;
+    }
+  }
+
+  &.alignright {
+    @include tr;
+
+    > .wp-block-button__link {
+      @include fr;
+      @include mt2;
+      @include ml4;
+    }
+  }
+
+  &.aligncenter {
+    @include tc;
   }
 }

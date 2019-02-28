@@ -1,0 +1,76 @@
+/**
+  WORD BREAK
+
+   Base:
+     word = word-break
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+@mixin word-normal {
+  word-break: normal;
+}
+
+@mixin word-wrap {
+  word-break: break-all;
+}
+
+@mixin word-nowrap {
+  word-break: keep-all;
+}
+
+@mixin word-normal-gts {
+  @media #{$breakpoint-not-small} {
+    word-break: normal;
+  }
+}
+
+@mixin word-wrap-gts {
+  @media #{$breakpoint-not-small} {
+    word-break: break-all;
+  }
+}
+
+@mixin word-nowrap-gts {
+  @media #{$breakpoint-not-small} {
+    word-break: keep-all;
+  }
+}
+
+@mixin word-normal-m {
+  @media #{$breakpoint-medium} {
+    word-break: normal;
+  }
+}
+
+@mixin word-wrap-m {
+  @media #{$breakpoint-medium} {
+    word-break: break-all;
+  }
+}
+
+@mixin word-nowrap-m {
+  @media #{$breakpoint-medium} {
+    word-break: keep-all;
+  }
+}
+
+@mixin word-normal-l {
+  @media #{$breakpoint-large} {
+    word-break: normal;
+  }
+}
+
+@mixin word-wrap-l {
+  @media #{$breakpoint-large} {
+    word-break: break-all;
+  }
+}
+
+@mixin word-nowrap-l {
+  @media #{$breakpoint-large} {
+    word-break: keep-all;
+  }
+}

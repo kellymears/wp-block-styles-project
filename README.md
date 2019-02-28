@@ -1,5 +1,8 @@
 # WordPress Block Styles Project
 
+![Editor output with debugging](https://raw.githubusercontent.com/kellymears/wp-block-styles-project/master/screenshot.png "Editor Output with Debugging")
+
+
 Working together to find a usable starting point for the major frameworks.
 
 **Currently targeting:**

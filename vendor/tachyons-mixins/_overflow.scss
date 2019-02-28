@@ -1,0 +1,271 @@
+/**
+    OVERFLOW
+
+    Media Query Extensions:
+      -gts = not-small
+      -m  = medium
+      -l  = large
+**/
+@mixin overflow-visible {
+  overflow: visible;
+}
+
+@mixin overflow-hidden {
+  overflow: hidden;
+}
+
+@mixin overflow-scroll {
+  overflow: scroll;
+}
+
+@mixin overflow-auto {
+  overflow: auto;
+}
+
+@mixin overflow-x-visible {
+  overflow-x: visible;
+}
+
+@mixin overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+@mixin overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+@mixin overflow-x-auto {
+  overflow-x: auto;
+}
+
+@mixin overflow-y-visible {
+  overflow-y: visible;
+}
+
+@mixin overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+@mixin overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+@mixin overflow-y-auto {
+  overflow-y: auto;
+}
+
+@mixin overflow-visible-gts {
+  @media #{$breakpoint-not-small} {
+    overflow: visible;
+  }
+}
+
+@mixin overflow-hidden-gts {
+  @media #{$breakpoint-not-small} {
+    overflow: hidden;
+  }
+}
+
+@mixin overflow-scroll-gts {
+  @media #{$breakpoint-not-small} {
+    overflow: scroll;
+  }
+}
+
+@mixin overflow-auto-gts {
+  @media #{$breakpoint-not-small} {
+    overflow: auto;
+  }
+}
+
+@mixin overflow-x-visible-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-x: visible;
+  }
+}
+
+@mixin overflow-x-hidden-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-x: hidden;
+  }
+}
+
+@mixin overflow-x-scroll-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-x: scroll;
+  }
+}
+
+@mixin overflow-x-auto-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-x: auto;
+  }
+}
+
+@mixin overflow-y-visible-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-y: visible;
+  }
+}
+
+@mixin overflow-y-hidden-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-y: hidden;
+  }
+}
+
+@mixin overflow-y-scroll-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-y: scroll;
+  }
+}
+
+@mixin overflow-y-auto-gts {
+  @media #{$breakpoint-not-small} {
+    overflow-y: auto;
+  }
+}
+
+@mixin overflow-visible-m {
+  @media #{$breakpoint-medium} {
+    overflow: visible;
+  }
+}
+
+@mixin overflow-hidden-m {
+  @media #{$breakpoint-medium} {
+    overflow: hidden;
+  }
+}
+
+@mixin overflow-scroll-m {
+  @media #{$breakpoint-medium} {
+    overflow: scroll;
+  }
+}
+
+@mixin overflow-auto-m {
+  @media #{$breakpoint-medium} {
+    overflow: auto;
+  }
+}
+
+@mixin overflow-x-visible-m {
+  @media #{$breakpoint-medium} {
+    overflow-x: visible;
+  }
+}
+
+@mixin overflow-x-hidden-m {
+  @media #{$breakpoint-medium} {
+    overflow-x: hidden;
+  }
+}
+
+@mixin overflow-x-scroll-m {
+  @media #{$breakpoint-medium} {
+    overflow-x: scroll;
+  }
+}
+
+@mixin overflow-x-auto-m {
+  @media #{$breakpoint-medium} {
+    overflow-x: auto;
+  }
+}
+
+@mixin overflow-y-visible-m {
+  @media #{$breakpoint-medium} {
+    overflow-y: visible;
+  }
+}
+
+@mixin overflow-y-hidden-m {
+  @media #{$breakpoint-medium} {
+    overflow-y: hidden;
+  }
+}
+
+@mixin overflow-y-scroll-m {
+  @media #{$breakpoint-medium} {
+    overflow-y: scroll;
+  }
+}
+
+@mixin overflow-y-auto-m {
+  @media #{$breakpoint-medium} {
+    overflow-y: auto;
+  }
+}
+
+@mixin overflow-visible-l {
+  @media #{$breakpoint-large} {
+    overflow: visible;
+  }
+}
+
+@mixin overflow-hidden-l {
+  @media #{$breakpoint-large} {
+    overflow: hidden;
+  }
+}
+
+@mixin overflow-scroll-l {
+  @media #{$breakpoint-large} {
+    overflow: scroll;
+  }
+}
+
+@mixin overflow-auto-l {
+  @media #{$breakpoint-large} {
+    overflow: auto;
+  }
+}
+
+@mixin overflow-x-visible-l {
+  @media #{$breakpoint-large} {
+    overflow-x: visible;
+  }
+}
+
+@mixin overflow-x-hidden-l {
+  @media #{$breakpoint-large} {
+    overflow-x: hidden;
+  }
+}
+
+@mixin overflow-x-scroll-l {
+  @media #{$breakpoint-large} {
+    overflow-x: scroll;
+  }
+}
+
+@mixin overflow-x-auto-l {
+  @media #{$breakpoint-large} {
+    overflow-x: auto;
+  }
+}
+
+@mixin overflow-y-visible-l {
+  @media #{$breakpoint-large} {
+    overflow-y: visible;
+  }
+}
+
+@mixin overflow-y-hidden-l {
+  @media #{$breakpoint-large} {
+    overflow-y: hidden;
+  }
+}
+
+@mixin overflow-y-scroll-l {
+  @media #{$breakpoint-large} {
+    overflow-y: scroll;
+  }
+}
+
+@mixin overflow-y-auto-l {
+  @media #{$breakpoint-large} {
+    overflow-y: auto;
+  }
+}

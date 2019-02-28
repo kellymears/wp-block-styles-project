@@ -1,0 +1,19 @@
+/**
+   GRADIENTS
+**/
+
+@mixin gradient-blue {
+  background-image: linear-gradient(#4570b0, #0081c2);
+}
+
+@mixin gradient-blue-reversed {
+  background-image: linear-gradient(#0081c2, #4570b0);
+}
+
+@mixin gradient-light-blue {
+  background-image: linear-gradient(#76d3fe, #008ae0);
+}
+
+@mixin gradient-light-blue-reversed {
+  background-image: linear-gradient(#008ae0, #76d3fe);
+}

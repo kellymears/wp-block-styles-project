@@ -1,0 +1,44 @@
+/**
+  TABLES
+  Docs: http://tachyons.io/docs/elements/tables/
+**/
+@mixin collapse {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@mixin striped--light-silver {
+  :nth-child(odd) {
+    background-color: $light-silver;
+  }
+}
+
+@mixin striped--moon-gray {
+  :nth-child(odd) {
+    background-color: $moon-gray;
+  }
+}
+
+@mixin striped--light-gray {
+  :nth-child(odd) {
+    background-color: $light-gray;
+  }
+}
+
+@mixin striped--near-white {
+  :nth-child(odd) {
+    background-color: $near-white;
+  }
+}
+
+@mixin stripe-light {
+  :nth-child(odd) {
+    background-color: $white-10;
+  }
+}
+
+@mixin stripe-dark {
+  :nth-child(odd) {
+    background-color: $black-10;
+  }
+}

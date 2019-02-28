@@ -1,0 +1,18 @@
+> .wp-block-separator {
+  border-width: 0.025rem;
+
+  @include bb-0;
+  @include bl-0;
+  @include br-0;
+  @include b--near-white;
+  @include o-30;
+  @include bg-transparent;
+
+  & .is-style-wide {
+    @include w-80-l;
+  }
+
+  & .is-style-dots {
+    @include w-30-l;
+  }
+}

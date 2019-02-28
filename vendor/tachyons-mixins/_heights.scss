@@ -1,0 +1,417 @@
+/**
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+
+   Base:
+     h = height
+     min-h = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+
+     -auto = string value of auto
+     -inherit = string value of inherit
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+
+**/
+
+/* Height Scale */
+@mixin h1 {
+  height: $height-1;
+}
+
+@mixin h2 {
+  height: $height-2;
+}
+
+@mixin h3 {
+  height: $height-3;
+}
+
+@mixin h4 {
+  height: $height-4;
+}
+
+@mixin h5 {
+  height: $height-5;
+}
+
+/* Height Percentages - Based off of height of parent */
+@mixin h-25 {
+  height: 25%;
+}
+
+@mixin h-50 {
+  height: 50%;
+}
+
+@mixin h-75 {
+  height: 75%;
+}
+
+@mixin h-100 {
+  height: 100%;
+}
+
+%min-h-100 {
+  min-height: 100%;
+}
+
+%max-h-100 {
+  max-height: 100%;
+}
+
+/* Screen Height Percentage */
+%vh-25 {
+  height: 25vh;
+}
+
+%vh-50 {
+  height: 50vh;
+}
+
+%vh-75 {
+  height: 75vh;
+}
+
+%vh-100 {
+  height: 100vh;
+}
+
+%min-vh-100 {
+  min-height: 100vh;
+}
+
+%max-vh-100 {
+  max-height: 100vh;
+}
+
+/* String Properties */
+@mixin h-auto {
+  height: auto;
+}
+
+@mixin h-inherit {
+  height: inherit;
+}
+
+@mixin h1-gts {
+  @media #{$breakpoint-not-small} {
+    height: $height-1;
+  }
+}
+
+@mixin h2-gts {
+  @media #{$breakpoint-not-small} {
+    height: $height-2;
+  }
+}
+
+@mixin h3-gts {
+  @media #{$breakpoint-not-small} {
+    height: $height-3;
+  }
+}
+
+@mixin h4-gts {
+  @media #{$breakpoint-not-small} {
+    height: $height-4;
+  }
+}
+
+@mixin h5-gts {
+  @media #{$breakpoint-not-small} {
+    height: $height-5;
+  }
+}
+
+@mixin h-25-gts {
+  @media #{$breakpoint-not-small} {
+    height: 25%;
+  }
+}
+
+@mixin h-50-gts {
+  @media #{$breakpoint-not-small} {
+    height: 50%;
+  }
+}
+
+@mixin h-75-gts {
+  @media #{$breakpoint-not-small} {
+    height: 75%;
+  }
+}
+
+@mixin h-100-gts {
+  @media #{$breakpoint-not-small} {
+    height: 100%;
+  }
+}
+
+%min-h-100-gts {
+  @media #{$breakpoint-not-small} {
+    min-height: 100%;
+  }
+}
+
+%vh-25-gts {
+  @media #{$breakpoint-not-small} {
+    height: 25vh;
+  }
+}
+
+%vh-50-gts {
+  @media #{$breakpoint-not-small} {
+    height: 50vh;
+  }
+}
+
+%vh-75-gts {
+  @media #{$breakpoint-not-small} {
+    height: 75vh;
+  }
+}
+
+%vh-100-gts {
+  @media #{$breakpoint-not-small} {
+    height: 100vh;
+  }
+}
+
+%min-vh-100-gts {
+  @media #{$breakpoint-not-small} {
+    min-height: 100vh;
+  }
+}
+
+@mixin h-auto-gts {
+  @media #{$breakpoint-not-small} {
+    height: auto;
+  }
+}
+
+@mixin h-inherit-gts {
+  @media #{$breakpoint-not-small} {
+    height: inherit;
+  }
+}
+
+@mixin h1-m {
+  @media #{$breakpoint-medium} {
+    height: $height-1;
+  }
+}
+
+@mixin h2-m {
+  @media #{$breakpoint-medium} {
+    height: $height-2;
+  }
+}
+
+@mixin h3-m {
+  @media #{$breakpoint-medium} {
+    height: $height-3;
+  }
+}
+
+@mixin h4-m {
+  @media #{$breakpoint-medium} {
+    height: $height-4;
+  }
+}
+
+@mixin h5-m {
+  @media #{$breakpoint-medium} {
+    height: $height-5;
+  }
+}
+
+@mixin h-25-m {
+  @media #{$breakpoint-medium} {
+    height: 25%;
+  }
+}
+
+@mixin h-50-m {
+  @media #{$breakpoint-medium} {
+    height: 50%;
+  }
+}
+
+@mixin h-75-m {
+  @media #{$breakpoint-medium} {
+    height: 75%;
+  }
+}
+
+@mixin h-100-m {
+  @media #{$breakpoint-medium} {
+    height: 100%;
+  }
+}
+
+%min-h-100-m {
+  @media #{$breakpoint-medium} {
+    min-height: 100%;
+  }
+}
+
+%vh-25-m {
+  @media #{$breakpoint-medium} {
+    height: 25vh;
+  }
+}
+
+%vh-50-m {
+  @media #{$breakpoint-medium} {
+    height: 50vh;
+  }
+}
+
+%vh-75-m {
+  @media #{$breakpoint-medium} {
+    height: 75vh;
+  }
+}
+
+%vh-100-m {
+  @media #{$breakpoint-medium} {
+    height: 100vh;
+  }
+}
+
+%min-vh-100-m {
+  @media #{$breakpoint-medium} {
+    min-height: 100vh;
+  }
+}
+
+@mixin h-auto-m {
+  @media #{$breakpoint-medium} {
+    height: auto;
+  }
+}
+
+@mixin h-inherit-m {
+  @media #{$breakpoint-medium} {
+    height: inherit;
+  }
+}
+
+@mixin h1-l {
+  @media #{$breakpoint-large} {
+    height: $height-1;
+  }
+}
+
+@mixin h2-l {
+  @media #{$breakpoint-large} {
+    height: $height-2;
+  }
+}
+
+@mixin h3-l {
+  @media #{$breakpoint-large} {
+    height: $height-3;
+  }
+}
+
+@mixin h4-l {
+  @media #{$breakpoint-large} {
+    height: $height-4;
+  }
+}
+
+@mixin h5-l {
+  @media #{$breakpoint-large} {
+    height: $height-5;
+  }
+}
+
+@mixin h-25-l {
+  @media #{$breakpoint-large} {
+    height: 25%;
+  }
+}
+
+@mixin h-50-l {
+  @media #{$breakpoint-large} {
+    height: 50%;
+  }
+}
+
+@mixin h-75-l {
+  @media #{$breakpoint-large} {
+    height: 75%;
+  }
+}
+
+@mixin h-100-l {
+  @media #{$breakpoint-large} {
+    height: 100%;
+  }
+}
+
+%min-h-100-l {
+  @media #{$breakpoint-large} {
+    min-height: 100%;
+  }
+}
+
+%vh-25-l {
+  @media #{$breakpoint-large} {
+    height: 25vh;
+  }
+}
+
+%vh-50-l {
+  @media #{$breakpoint-large} {
+    height: 50vh;
+  }
+}
+
+%vh-75-l {
+  @media #{$breakpoint-large} {
+    height: 75vh;
+  }
+}
+
+%vh-100-l {
+  @media #{$breakpoint-large} {
+    height: 100vh;
+  }
+}
+
+%min-vh-100-l {
+  @media #{$breakpoint-large} {
+    min-height: 100vh;
+  }
+}
+
+@mixin h-auto-l {
+  @media #{$breakpoint-large} {
+    height: auto;
+  }
+}
+
+@mixin h-inherit-l {
+  @media #{$breakpoint-large} {
+    height: inherit;
+  }
+}

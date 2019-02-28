@@ -16,4 +16,5 @@
 
   @include debug(wp-blocks);
   @include debugGrid();
+  @include debugElements();
 }

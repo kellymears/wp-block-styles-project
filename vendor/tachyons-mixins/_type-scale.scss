@@ -1,0 +1,266 @@
+/**
+   TYPE SCALE
+   Docs: http://tachyons.io/docs/typography/scale/
+
+   Base:
+    f = font-size
+
+   Modifiers
+     1 = 1st step in size scale
+     2 = 2nd step in size scale
+     3 = 3rd step in size scale
+     4 = 4th step in size scale
+     5 = 5th step in size scale
+     6 = 6th step in size scale
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+/*
+ * For Hero/Marketing Titles
+ *
+ * These generally are too large for mobile
+ * so be careful using them on smaller screens.
+ * */
+@mixin f-subheadline {
+  font-size: $font-size-subheadline;
+}
+
+@mixin f-5 {
+  @include f-subheadline;
+}
+
+@mixin f-headline {
+  font-size: $font-size-headline;
+}
+
+@mixin f-6 {
+  @include f-headline;
+}
+
+/* Type Scale */
+
+@mixin f1 {
+  font-size: $font-size-1;
+}
+
+@mixin f2 {
+  font-size: $font-size-2;
+}
+
+@mixin f3 {
+  font-size: $font-size-3;
+}
+
+@mixin f4 {
+  font-size: $font-size-4;
+}
+
+@mixin f5 {
+  font-size: $font-size-5;
+}
+
+@mixin f6 {
+  font-size: $font-size-6;
+}
+
+@mixin f7 {
+  font-size: $font-size-7;
+}
+
+@mixin f-6-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-headline;
+  }
+}
+
+@mixin f-headline-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-headline;
+  }
+}
+
+@mixin f-5-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-subheadline;
+  }
+}
+
+@mixin f-subheadline-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-subheadline;
+  }
+}
+
+@mixin f1-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-1;
+  }
+}
+
+@mixin f2-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-2;
+  }
+}
+
+@mixin f3-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-3;
+  }
+}
+
+@mixin f4-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-4;
+  }
+}
+
+@mixin f5-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-5;
+  }
+}
+
+@mixin f6-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-6;
+  }
+}
+
+@mixin f7-gts {
+  @media #{$breakpoint-not-small} {
+    font-size: $font-size-7;
+  }
+}
+
+@mixin f-6-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-headline;
+  }
+}
+
+@mixin f-headline-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-headline;
+  }
+}
+
+@mixin f-5-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-subheadline;
+  }
+}
+
+@mixin f-subheadline-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-subheadline;
+  }
+}
+
+@mixin f1-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-1;
+  }
+}
+
+@mixin f2-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-2;
+  }
+}
+
+@mixin f3-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-3;
+  }
+}
+
+@mixin f4-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-4;
+  }
+}
+
+@mixin f5-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-5;
+  }
+}
+
+@mixin f6-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-6;
+  }
+}
+
+@mixin f7-m {
+  @media #{$breakpoint-medium} {
+    font-size: $font-size-7;
+  }
+}
+
+@mixin f-headline-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-headline;
+  }
+}
+
+@mixin f-6-l {
+  @include f-headline-l;
+}
+
+@mixin f-subheadline-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-subheadline;
+  }
+}
+
+@mixin f-5-l {
+  @include f-subheadline-l;
+}
+
+@mixin f1-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-1;
+  }
+}
+
+@mixin f2-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-2;
+  }
+}
+
+@mixin f3-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-3;
+  }
+}
+
+@mixin f4-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-4;
+  }
+}
+
+@mixin f5-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-5;
+  }
+}
+
+@mixin f6-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-6;
+  }
+}
+
+@mixin f7-l {
+  @media #{$breakpoint-large} {
+    font-size: $font-size-7;
+  }
+}

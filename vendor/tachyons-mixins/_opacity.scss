@@ -1,0 +1,55 @@
+/**
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+**/
+@mixin o-100 {
+  opacity: 1;
+}
+
+@mixin o-90 {
+  opacity: 0.9;
+}
+
+@mixin o-80 {
+  opacity: 0.8;
+}
+
+@mixin o-70 {
+  opacity: 0.7;
+}
+
+@mixin o-60 {
+  opacity: 0.6;
+}
+
+@mixin o-50 {
+  opacity: 0.5;
+}
+
+@mixin o-40 {
+  opacity: 0.4;
+}
+
+@mixin o-30 {
+  opacity: 0.3;
+}
+
+@mixin o-20 {
+  opacity: 0.2;
+}
+
+@mixin o-10 {
+  opacity: 0.1;
+}
+
+@mixin o-05 {
+  opacity: 0.05;
+}
+
+@mixin o-025 {
+  opacity: 0.025;
+}
+
+@mixin o-0 {
+  opacity: 0;
+}

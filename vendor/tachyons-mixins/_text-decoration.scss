@@ -1,0 +1,74 @@
+/**
+   TEXT DECORATION
+   Docs: http://tachyons.io/docs/typography/text-decoration/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+@mixin strike {
+  text-decoration: line-through;
+}
+
+@mixin underline {
+  text-decoration: underline;
+}
+
+@mixin no-underline {
+  text-decoration: none;
+}
+
+@mixin strike-gts {
+  @media #{$breakpoint-not-small} {
+    text-decoration: line-through;
+  }
+}
+
+@mixin underline-gts {
+  @media #{$breakpoint-not-small} {
+    text-decoration: underline;
+  }
+}
+
+@mixin no-underline-gts {
+  @media #{$breakpoint-not-small} {
+    text-decoration: none;
+  }
+}
+
+@mixin strike-m {
+  @media #{$breakpoint-medium} {
+    text-decoration: line-through;
+  }
+}
+
+@mixin underline-m {
+  @media #{$breakpoint-medium} {
+    text-decoration: underline;
+  }
+}
+
+@mixin no-underline-m {
+  @media #{$breakpoint-medium} {
+    text-decoration: none;
+  }
+}
+
+@mixin strike-l {
+  @media #{$breakpoint-large} {
+    text-decoration: line-through;
+  }
+}
+
+@mixin underline-l {
+  @media #{$breakpoint-large} {
+    text-decoration: underline;
+  }
+}
+
+@mixin no-underline-l {
+  @media #{$breakpoint-large} {
+    text-decoration: none;
+  }
+}

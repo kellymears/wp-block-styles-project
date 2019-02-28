@@ -1,0 +1,332 @@
+/** ASPECT RATIOS */
+
+/* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
+ * Wrap the outer element in aspect-ratio and then extend it with the desired ratio i.e
+ * Make sure there are no height and width attributes on the embedded media.
+ * Adapted from: https://github.com/suitcss/components-flex-embed
+ *
+ * Example:
+ *
+ * <div class="aspect-ratio aspect-ratio--16x9">
+ *  <iframe class="aspect-ratio--object"></iframe>
+ * </div>
+ *
+ * */
+
+@mixin aspect-ratio {
+  height: 0;
+  position: relative;
+}
+
+@mixin aspect-ratio--16x9 {
+  padding-bottom: 56.25%;
+}
+
+@mixin aspect-ratio--9x16 {
+  padding-bottom: 177.77%;
+}
+
+@mixin aspect-ratio--4x3 {
+  padding-bottom: 75%;
+}
+
+@mixin aspect-ratio--3x4 {
+  padding-bottom: 133.33%;
+}
+
+@mixin aspect-ratio--6x4 {
+  padding-bottom: 66.6%;
+}
+
+@mixin aspect-ratio--4x6 {
+  padding-bottom: 150%;
+}
+
+@mixin aspect-ratio--8x5 {
+  padding-bottom: 62.5%;
+}
+
+@mixin aspect-ratio--5x8 {
+  padding-bottom: 160%;
+}
+
+@mixin aspect-ratio--7x5 {
+  padding-bottom: 71.42%;
+}
+
+@mixin aspect-ratio--5x7 {
+  padding-bottom: 140%;
+}
+
+@mixin aspect-ratio--1x1 {
+  padding-bottom: 100%;
+}
+
+@mixin aspect-ratio--object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+@mixin aspect-ratio-gts {
+  @media #{$breakpoint-not-small} {
+    height: 0;
+    position: relative;
+  }
+}
+
+@mixin aspect-ratio--16x9-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 56.25%;
+  }
+}
+
+@mixin aspect-ratio--9x16-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 177.77%;
+  }
+}
+
+@mixin aspect-ratio--4x3-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 75%;
+  }
+}
+
+@mixin aspect-ratio--3x4-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 133.33%;
+  }
+}
+
+@mixin aspect-ratio--6x4-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 66.6%;
+  }
+}
+
+@mixin aspect-ratio--4x6-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 150%;
+  }
+}
+
+@mixin aspect-ratio--8x5-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 62.5%;
+  }
+}
+
+@mixin aspect-ratio--5x8-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 160%;
+  }
+}
+
+@mixin aspect-ratio--7x5-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 71.42%;
+  }
+}
+
+@mixin aspect-ratio--5x7-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 140%;
+  }
+}
+
+@mixin aspect-ratio--1x1-gts {
+  @media #{$breakpoint-not-small} {
+    padding-bottom: 100%;
+  }
+}
+
+@mixin aspect-ratio--object-gts {
+  @media #{$breakpoint-not-small} {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+}
+
+@mixin aspect-ratio-m {
+  @media #{$breakpoint-medium} {
+    height: 0;
+    position: relative;
+  }
+}
+
+@mixin aspect-ratio--16x9-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 56.25%;
+  }
+}
+
+@mixin aspect-ratio--9x16-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 177.77%;
+  }
+}
+
+@mixin aspect-ratio--4x3-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 75%;
+  }
+}
+
+@mixin aspect-ratio--3x4-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 133.33%;
+  }
+}
+
+@mixin aspect-ratio--6x4-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 66.6%;
+  }
+}
+
+@mixin aspect-ratio--4x6-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 150%;
+  }
+}
+
+@mixin aspect-ratio--8x5-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 62.5%;
+  }
+}
+
+@mixin aspect-ratio--5x8-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 160%;
+  }
+}
+
+@mixin aspect-ratio--7x5-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 71.42%;
+  }
+}
+
+@mixin aspect-ratio--5x7-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 140%;
+  }
+}
+
+@mixin aspect-ratio--1x1-m {
+  @media #{$breakpoint-medium} {
+    padding-bottom: 100%;
+  }
+}
+
+@mixin aspect-ratio--object-m {
+  @media #{$breakpoint-medium} {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+}
+
+@mixin aspect-ratio-l {
+  @media #{$breakpoint-large} {
+    height: 0;
+    position: relative;
+  }
+}
+
+@mixin aspect-ratio--16x9-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 56.25%;
+  }
+}
+
+@mixin aspect-ratio--9x16-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 177.77%;
+  }
+}
+
+@mixin aspect-ratio--4x3-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 75%;
+  }
+}
+
+@mixin aspect-ratio--3x4-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 133.33%;
+  }
+}
+
+@mixin aspect-ratio--6x4-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 66.6%;
+  }
+}
+
+@mixin aspect-ratio--4x6-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 150%;
+  }
+}
+
+@mixin aspect-ratio--8x5-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 62.5%;
+  }
+}
+
+@mixin aspect-ratio--5x8-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 160%;
+  }
+}
+
+@mixin aspect-ratio--7x5-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 71.42%;
+  }
+}
+
+@mixin aspect-ratio--5x7-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 140%;
+  }
+}
+
+@mixin aspect-ratio--1x1-l {
+  @media #{$breakpoint-large} {
+    padding-bottom: 100%;
+  }
+}
+
+@mixin aspect-ratio--object-l {
+  @media #{$breakpoint-large} {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+}

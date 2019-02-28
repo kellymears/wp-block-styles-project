@@ -1,0 +1,83 @@
+.wp-block-gallery {
+  @include flex;
+  @include flex-wrap;
+  @include pa0;
+  @include mv0;
+  @include unlist;
+
+  .blocks-gallery-image,
+  .blocks-gallery-item {
+    @include flex;
+    @include relative;
+    @include overflow-hidden;
+    @include flex-grow-1;
+    @include flex-column;
+    @include justify-center;
+    @include mh1;
+
+    width: calc((100% / 2) - 1rem);
+
+    figure {
+      @include flex;
+      @include items-end;
+      @include h-100;
+      @include mh0;
+      @include mv1;
+      @include ph0;
+      @include overflow-hidden;
+    }
+
+    img {
+      @include db;
+      @include pa0;
+      @include h-auto;
+    }
+
+    figcaption {
+      @include absolute;
+      @include center;
+      @include w-100;
+      @include ma0;
+      @include pv3;
+      @include ph1;
+      @include o-80;
+      @include bg-near-black;
+      @include white;
+      @include f7;
+      @include tc;
+
+      img {
+        @include di;
+      }
+    }
+  }
+
+  &.is-cropped .blocks-gallery-image,
+  &.is-cropped .blocks-gallery-item {
+    a,
+    img {
+      @include flex;
+      @include w-100;
+      @include h-100;
+      @include cover;
+    }
+  }
+
+  &.columns-1 .blocks-gallery-image,
+  &.columns-1 .blocks-gallery-item {
+    width: calc((100% / 1) - 1rem);
+
+    @include mh1;
+  }
+
+  @media #{$breakpoint-not-small} {
+    @for $i from 3 through 8 {
+      &.columns-#{ $i } .blocks-gallery-image,
+      &.columns-#{ $i } .blocks-gallery-item {
+        width: calc((100% / #{ $i }) - 1rem);
+
+        @include mh1;
+      }
+    }
+  }
+}

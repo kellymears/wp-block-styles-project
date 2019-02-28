@@ -1,0 +1,109 @@
+/**
+   CLEARFIX
+   http://tachyons.io/docs/layout/clearfix/
+
+   Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher@mixin com/micro-clearfix-hack/
+**/
+@mixin cf-before {
+  content: " ";
+  display: table;
+}
+
+@mixin cf-after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+@mixin cf {
+  *zoom: 1;
+}
+
+@mixin cl {
+  clear: left;
+}
+
+@mixin cr {
+  clear: right;
+}
+
+@mixin cb {
+  clear: both;
+}
+
+@mixin cn {
+  clear: none;
+}
+
+@mixin cl-gts {
+  @media #{$breakpoint-not-small} {
+    clear: left;
+  }
+}
+
+@mixin cr-gts {
+  @media #{$breakpoint-not-small} {
+    clear: right;
+  }
+}
+
+@mixin cb-gts {
+  @media #{$breakpoint-not-small} {
+    clear: both;
+  }
+}
+
+@mixin cn-gts {
+  @media #{$breakpoint-not-small} {
+    clear: none;
+  }
+}
+
+@mixin cl-m {
+  @media #{$breakpoint-medium} {
+    clear: left;
+  }
+}
+
+@mixin cr-m {
+  @media #{$breakpoint-medium} {
+    clear: right;
+  }
+}
+
+@mixin cb-m {
+  @media #{$breakpoint-medium} {
+    clear: both;
+  }
+}
+
+@mixin cn-m {
+  @media #{$breakpoint-medium} {
+    clear: none;
+  }
+}
+
+@mixin cl-l {
+  @media #{$breakpoint-large} {
+    clear: left;
+  }
+}
+
+@mixin cr-l {
+  @media #{$breakpoint-large} {
+    clear: right;
+  }
+}
+
+@mixin cb-l {
+  @media #{$breakpoint-large} {
+    clear: both;
+  }
+}
+
+@mixin cn-l {
+  @media #{$breakpoint-large} {
+    clear: none;
+  }
+}

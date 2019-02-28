@@ -1,0 +1,913 @@
+/**
+   WIDTHS
+   Docs: http://tachyons.io/docs/layout/widths/
+
+   Base:
+     w = width
+
+     Modifiers
+       1 = 1st step in width scale
+       2 = 2nd step in width scale
+       3 = 3rd step in width scale
+       4 = 4th step in width scale
+       5 = 5th step in width scale
+
+       -10  = literal value 10%
+       -20  = literal value 20%
+       -25  = literal value 25%
+       -30  = literal value 30%
+       -33  = literal value 33%
+       -34  = literal value 34%
+       -40  = literal value 40%
+       -50  = literal value 50%
+       -60  = literal value 60%
+       -70  = literal value 70%
+       -75  = literal value 75%
+       -80  = literal value 80%
+       -90  = literal value 90%
+       -100 = literal value 100%
+
+       -third      = 100% / 3 (Not supported in opera mini or IE8)
+       -two-thirds = 100% / 1%5 (Not supported in opera mini or IE8)
+       -auto       = string value auto
+
+     Media Query Extensions:
+       -gts = not-small
+       -m  = medium
+       -l  = large
+**/
+
+/* Width Scale */
+@mixin w1 {
+  width: $width-1;
+}
+
+@mixin w2 {
+  width: $width-2;
+}
+
+@mixin w3 {
+  width: $width-3;
+}
+
+@mixin w4 {
+  width: $width-4;
+}
+
+@mixin w5 {
+  width: $width-5;
+}
+
+@mixin w-10 {
+  width: 10%;
+}
+
+@mixin w-20 {
+  width: 20%;
+}
+
+@mixin w-25 {
+  width: 25%;
+}
+
+@mixin w-30 {
+  width: 30%;
+}
+
+@mixin w-33 {
+  width: 33%;
+}
+
+@mixin w-34 {
+  width: 34%;
+}
+
+@mixin w-40 {
+  width: 40%;
+}
+
+@mixin w-50 {
+  width: 50%;
+}
+
+@mixin w-60 {
+  width: 60%;
+}
+
+@mixin w-70 {
+  width: 70%;
+}
+
+@mixin w-75 {
+  width: 75%;
+}
+
+@mixin w-80 {
+  width: 80%;
+}
+
+@mixin w-90 {
+  width: 90%;
+}
+
+@mixin w-100 {
+  width: 100%;
+}
+
+@mixin w-third {
+  width: (100% / 3);
+}
+
+@mixin w-two-thirds {
+  width: (100% / 1.5);
+}
+
+@mixin w-auto {
+  width: auto;
+}
+
+@mixin max-w-100 {
+  max-width: 100%;
+}
+
+@mixin min-w-100 {
+  min-width: 100%;
+}
+
+@mixin w1-gts {
+  @media #{$breakpoint-not-small} {
+    width: $width-1;
+  }
+}
+
+@mixin w2-gts {
+  @media #{$breakpoint-not-small} {
+    width: $width-2;
+  }
+}
+
+@mixin w3-gts {
+  @media #{$breakpoint-not-small} {
+    width: $width-3;
+  }
+}
+
+@mixin w4-gts {
+  @media #{$breakpoint-not-small} {
+    width: $width-4;
+  }
+}
+
+@mixin w5-gts {
+  @media #{$breakpoint-not-small} {
+    width: $width-5;
+  }
+}
+
+@mixin w-10-gts {
+  @media #{$breakpoint-not-small} {
+    width: 10%;
+  }
+}
+
+@mixin w-20-gts {
+  @media #{$breakpoint-not-small} {
+    width: 20%;
+  }
+}
+
+@mixin w-25-gts {
+  @media #{$breakpoint-not-small} {
+    width: 25%;
+  }
+}
+
+@mixin w-30-gts {
+  @media #{$breakpoint-not-small} {
+    width: 30%;
+  }
+}
+
+@mixin w-33-gts {
+  @media #{$breakpoint-not-small} {
+    width: 33%;
+  }
+}
+
+@mixin w-34-gts {
+  @media #{$breakpoint-not-small} {
+    width: 34%;
+  }
+}
+
+@mixin w-40-gts {
+  @media #{$breakpoint-not-small} {
+    width: 40%;
+  }
+}
+
+@mixin w-50-gts {
+  @media #{$breakpoint-not-small} {
+    width: 50%;
+  }
+}
+
+@mixin w-60-gts {
+  @media #{$breakpoint-not-small} {
+    width: 60%;
+  }
+}
+
+@mixin w-70-gts {
+  @media #{$breakpoint-not-small} {
+    width: 70%;
+  }
+}
+
+@mixin w-75-gts {
+  @media #{$breakpoint-not-small} {
+    width: 75%;
+  }
+}
+
+@mixin w-80-gts {
+  @media #{$breakpoint-not-small} {
+    width: 80%;
+  }
+}
+
+@mixin w-90-gts {
+  @media #{$breakpoint-not-small} {
+    width: 90%;
+  }
+}
+
+@mixin w-100-gts {
+  @media #{$breakpoint-not-small} {
+    width: 100%;
+  }
+}
+
+@mixin w-third-gts {
+  @media #{$breakpoint-not-small} {
+    width: (100% / 3);
+  }
+}
+
+@mixin w-two-thirds-gts {
+  @media #{$breakpoint-not-small} {
+    width: (100% / 1.5);
+  }
+}
+
+@mixin w-auto-gts {
+  @media #{$breakpoint-not-small} {
+    width: auto;
+  }
+}
+
+@mixin w1-m {
+  @media #{$breakpoint-medium} {
+    width: $width-1;
+  }
+}
+
+@mixin w2-m {
+  @media #{$breakpoint-medium} {
+    width: $width-2;
+  }
+}
+
+@mixin w3-m {
+  @media #{$breakpoint-medium} {
+    width: $width-3;
+  }
+}
+
+@mixin w4-m {
+  @media #{$breakpoint-medium} {
+    width: $width-4;
+  }
+}
+
+@mixin w5-m {
+  @media #{$breakpoint-medium} {
+    width: $width-5;
+  }
+}
+
+@mixin w-10-m {
+  @media #{$breakpoint-medium} {
+    width: 10%;
+  }
+}
+
+@mixin w-20-m {
+  @media #{$breakpoint-medium} {
+    width: 20%;
+  }
+}
+
+@mixin w-25-m {
+  @media #{$breakpoint-medium} {
+    width: 25%;
+  }
+}
+
+@mixin w-30-m {
+  @media #{$breakpoint-medium} {
+    width: 30%;
+  }
+}
+
+@mixin w-33-m {
+  @media #{$breakpoint-medium} {
+    width: 33%;
+  }
+}
+
+@mixin w-34-m {
+  @media #{$breakpoint-medium} {
+    width: 34%;
+  }
+}
+
+@mixin w-40-m {
+  @media #{$breakpoint-medium} {
+    width: 40%;
+  }
+}
+
+@mixin w-50-m {
+  @media #{$breakpoint-medium} {
+    width: 50%;
+  }
+}
+
+@mixin w-60-m {
+  @media #{$breakpoint-medium} {
+    width: 60%;
+  }
+}
+
+@mixin w-70-m {
+  @media #{$breakpoint-medium} {
+    width: 70%;
+  }
+}
+
+@mixin w-75-m {
+  @media #{$breakpoint-medium} {
+    width: 75%;
+  }
+}
+
+@mixin w-80-m {
+  @media #{$breakpoint-medium} {
+    width: 80%;
+  }
+}
+
+@mixin w-90-m {
+  @media #{$breakpoint-medium} {
+    width: 90%;
+  }
+}
+
+@mixin w-100-m {
+  @media #{$breakpoint-medium} {
+    width: 100%;
+  }
+}
+
+@mixin w-third-m {
+  @media #{$breakpoint-medium} {
+    width: (100% / 3);
+  }
+}
+
+@mixin w-two-thirds-m {
+  @media #{$breakpoint-medium} {
+    width: (100% / 1.5);
+  }
+}
+
+@mixin w-auto-m {
+  @media #{$breakpoint-medium} {
+    width: auto;
+  }
+}
+
+@mixin w1-l {
+  @media #{$breakpoint-large} {
+    width: $width-1;
+  }
+}
+
+@mixin w2-l {
+  @media #{$breakpoint-large} {
+    width: $width-2;
+  }
+}
+
+@mixin w3-l {
+  @media #{$breakpoint-large} {
+    width: $width-3;
+  }
+}
+
+@mixin w4-l {
+  @media #{$breakpoint-large} {
+    width: $width-4;
+  }
+}
+
+@mixin w5-l {
+  @media #{$breakpoint-large} {
+    width: $width-5;
+  }
+}
+
+@mixin w-10-l {
+  @media #{$breakpoint-large} {
+    width: 10%;
+  }
+}
+
+@mixin w-20-l {
+  @media #{$breakpoint-large} {
+    width: 20%;
+  }
+}
+
+@mixin w-25-l {
+  @media #{$breakpoint-large} {
+    width: 25%;
+  }
+}
+
+@mixin w-30-l {
+  @media #{$breakpoint-large} {
+    width: 30%;
+  }
+}
+
+@mixin w-33-l {
+  @media #{$breakpoint-large} {
+    width: 33%;
+  }
+}
+
+@mixin w-34-l {
+  @media #{$breakpoint-large} {
+    width: 34%;
+  }
+}
+
+@mixin w-40-l {
+  @media #{$breakpoint-large} {
+    width: 40%;
+  }
+}
+
+@mixin w-50-l {
+  @media #{$breakpoint-large} {
+    width: 50%;
+  }
+}
+
+@mixin w-60-l {
+  @media #{$breakpoint-large} {
+    width: 60%;
+  }
+}
+
+@mixin w-70-l {
+  @media #{$breakpoint-large} {
+    width: 70%;
+  }
+}
+
+@mixin w-75-l {
+  @media #{$breakpoint-large} {
+    width: 75%;
+  }
+}
+
+@mixin w-80-l {
+  @media #{$breakpoint-large} {
+    width: 80%;
+  }
+}
+
+@mixin w-90-l {
+  @media #{$breakpoint-large} {
+    width: 90%;
+  }
+}
+
+@mixin w-100-l {
+  @media #{$breakpoint-large} {
+    width: 100%;
+  }
+}
+
+@mixin w-third-l {
+  @media #{$breakpoint-large} {
+    width: (100% /3);
+  }
+}
+
+@mixin w-two-thirds-l {
+  @media #{$breakpoint-large} {
+    width: (100% / 1.5);
+  }
+}
+
+@mixin w-auto-l {
+  @media #{$breakpoint-large} {
+    width: auto;
+  }
+}
+
+@mixin vw-10 {
+  width: 10vw;
+}
+
+@mixin vw-20 {
+  width: 20vw;
+}
+
+@mixin vw-25 {
+  width: 25vw;
+}
+
+@mixin vw-30 {
+  width: 30vw;
+}
+
+@mixin vw-33 {
+  width: 33vw;
+}
+
+@mixin vw-34 {
+  width: 34vw;
+}
+
+@mixin vw-40 {
+  width: 40vw;
+}
+
+@mixin vw-50 {
+  width: 50vw;
+}
+
+@mixin vw-60 {
+  width: 60vw;
+}
+
+@mixin vw-70 {
+  width: 70vw;
+}
+
+@mixin vw-75 {
+  width: 75vw;
+}
+
+@mixin vw-80 {
+  width: 80vw;
+}
+
+@mixin vw-90 {
+  width: 90vw;
+}
+
+@mixin vw-100 {
+  width: 100vw;
+}
+
+@mixin vw-third {
+  width: (100vw / 3);
+}
+
+@mixin vw-two-thirds {
+  width: (100vw / 1.5);
+}
+
+@mixin vw-auto {
+  width: auto;
+}
+
+@mixin max-vw-100 {
+  max-width: 100vw;
+}
+
+@mixin min-vw-100 {
+  min-width: 100vw;
+}
+
+@mixin vw-10-gts {
+  @media #{$breakpoint-not-small} {
+    width: 10vw;
+  }
+}
+
+@mixin vw-20-gts {
+  @media #{$breakpoint-not-small} {
+    width: 20vw;
+  }
+}
+
+@mixin vw-25-gts {
+  @media #{$breakpoint-not-small} {
+    width: 25vw;
+  }
+}
+
+@mixin vw-30-gts {
+  @media #{$breakpoint-not-small} {
+    width: 30vw;
+  }
+}
+
+@mixin vw-33-gts {
+  @media #{$breakpoint-not-small} {
+    width: 33vw;
+  }
+}
+
+@mixin vw-34-gts {
+  @media #{$breakpoint-not-small} {
+    width: 34vw;
+  }
+}
+
+@mixin vw-40-gts {
+  @media #{$breakpoint-not-small} {
+    width: 40vw;
+  }
+}
+
+@mixin vw-50-gts {
+  @media #{$breakpoint-not-small} {
+    width: 50vw;
+  }
+}
+
+@mixin vw-60-gts {
+  @media #{$breakpoint-not-small} {
+    width: 60vw;
+  }
+}
+
+@mixin vw-70-gts {
+  @media #{$breakpoint-not-small} {
+    width: 70vw;
+  }
+}
+
+@mixin vw-75-gts {
+  @media #{$breakpoint-not-small} {
+    width: 75vw;
+  }
+}
+
+@mixin vw-80-gts {
+  @media #{$breakpoint-not-small} {
+    width: 80vw;
+  }
+}
+
+@mixin vw-90-gts {
+  @media #{$breakpoint-not-small} {
+    width: 90vw;
+  }
+}
+
+@mixin vw-100-gts {
+  @media #{$breakpoint-not-small} {
+    width: 100vw;
+  }
+}
+
+@mixin vw-third-gts {
+  @media #{$breakpoint-not-small} {
+    width: (100vw / 3);
+  }
+}
+
+@mixin vw-two-thirds-gts {
+  @media #{$breakpoint-not-small} {
+    width: (100vw / 1.5);
+  }
+}
+
+@mixin vw-auto-gts {
+  @media #{$breakpoint-not-small} {
+    width: auto;
+  }
+}
+
+@mixin vw-10-m {
+  @media #{$breakpoint-medium} {
+    width: 10vw;
+  }
+}
+
+@mixin vw-20-m {
+  @media #{$breakpoint-medium} {
+    width: 20vw;
+  }
+}
+
+@mixin vw-25-m {
+  @media #{$breakpoint-medium} {
+    width: 25vw;
+  }
+}
+
+@mixin vw-30-m {
+  @media #{$breakpoint-medium} {
+    width: 30vw;
+  }
+}
+
+@mixin vw-33-m {
+  @media #{$breakpoint-medium} {
+    width: 33vw;
+  }
+}
+
+@mixin vw-34-m {
+  @media #{$breakpoint-medium} {
+    width: 34vw;
+  }
+}
+
+@mixin vw-40-m {
+  @media #{$breakpoint-medium} {
+    width: 40vw;
+  }
+}
+
+@mixin vw-50-m {
+  @media #{$breakpoint-medium} {
+    width: 50vw;
+  }
+}
+
+@mixin vw-60-m {
+  @media #{$breakpoint-medium} {
+    width: 60vw;
+  }
+}
+
+@mixin vw-70-m {
+  @media #{$breakpoint-medium} {
+    width: 70vw;
+  }
+}
+
+@mixin vw-75-m {
+  @media #{$breakpoint-medium} {
+    width: 75vw;
+  }
+}
+
+@mixin vw-80-m {
+  @media #{$breakpoint-medium} {
+    width: 80vw;
+  }
+}
+
+@mixin vw-90-m {
+  @media #{$breakpoint-medium} {
+    width: 90vw;
+  }
+}
+
+@mixin vw-100-m {
+  @media #{$breakpoint-medium} {
+    width: 100vw;
+  }
+}
+
+@mixin vw-third-m {
+  @media #{$breakpoint-medium} {
+    width: (100vw / 3);
+  }
+}
+
+@mixin vw-two-thirds-m {
+  @media #{$breakpoint-medium} {
+    width: (100vw / 1.5);
+  }
+}
+
+@mixin vw-auto-m {
+  @media #{$breakpoint-medium} {
+    width: auto;
+  }
+}
+
+@mixin vw-10-l {
+  @media #{$breakpoint-large} {
+    width: 10vw;
+  }
+}
+
+@mixin vw-20-l {
+  @media #{$breakpoint-large} {
+    width: 20vw;
+  }
+}
+
+@mixin vw-25-l {
+  @media #{$breakpoint-large} {
+    width: 25vw;
+  }
+}
+
+@mixin vw-30-l {
+  @media #{$breakpoint-large} {
+    width: 30vw;
+  }
+}
+
+@mixin vw-33-l {
+  @media #{$breakpoint-large} {
+    width: 33vw;
+  }
+}
+
+@mixin w-34-l {
+  @media #{$breakpoint-large} {
+    width: 34vw;
+  }
+}
+
+@mixin w-40-l {
+  @media #{$breakpoint-large} {
+    width: 40vw;
+  }
+}
+
+@mixin w-50-l {
+  @media #{$breakpoint-large} {
+    width: 50vw;
+  }
+}
+
+@mixin w-60-l {
+  @media #{$breakpoint-large} {
+    width: 60vw;
+  }
+}
+
+@mixin w-70-l {
+  @media #{$breakpoint-large} {
+    width: 70vw;
+  }
+}
+
+@mixin w-75-l {
+  @media #{$breakpoint-large} {
+    width: 75vw;
+  }
+}
+
+@mixin w-80-l {
+  @media #{$breakpoint-large} {
+    width: 80vw;
+  }
+}
+
+@mixin w-90-l {
+  @media #{$breakpoint-large} {
+    width: 90vw;
+  }
+}
+
+@mixin w-100-l {
+  @media #{$breakpoint-large} {
+    width: 100vw;
+  }
+}
+
+@mixin w-third-l {
+  @media #{$breakpoint-large} {
+    width: (100vw /3);
+  }
+}
+
+@mixin w-two-thirds-l {
+  @media #{$breakpoint-large} {
+    width: (100vw / 1.5);
+  }
+}
+
+@mixin vw-auto-l {
+  @media #{$breakpoint-large} {
+    width: auto;
+  }
+}

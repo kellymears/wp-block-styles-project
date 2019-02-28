@@ -1,0 +1,26 @@
+/**
+   LINKS
+   Docs: http://tachyons.io/docs/elements/links/
+**/
+@mixin link {
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+
+  :link,
+  :visited {
+    transition: color 0.15s ease-in;
+  }
+
+  :hover {
+    transition: color 0.15s ease-in;
+  }
+
+  :active {
+    transition: color 0.15s ease-in;
+  }
+
+  :focus {
+    transition: color 0.15s ease-in;
+    outline: 1px dotted currentColor;
+  }
+}

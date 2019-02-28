@@ -1,0 +1,499 @@
+/**
+   COORDINATES
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Use in combination with the position module.
+
+   Base:
+     top
+     bottom
+     right
+     left
+
+   Modifiers:
+     -0  = literal value 0
+     -1  = literal value 1
+     -2  = literal value 2
+     --1 = literal value -1
+     --2 = literal value -2
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+@mixin top-0 {
+  top: 0;
+}
+
+@mixin right-0 {
+  right: 0;
+}
+
+@mixin bottom-0 {
+  bottom: 0;
+}
+
+@mixin left-0 {
+  left: 0;
+}
+
+@mixin top-1 {
+  top: 1rem;
+}
+
+@mixin right-1 {
+  right: 1rem;
+}
+
+@mixin bottom-1 {
+  bottom: 1rem;
+}
+
+@mixin left-1 {
+  left: 1rem;
+}
+
+@mixin top-2 {
+  top: 2rem;
+}
+
+@mixin right-2 {
+  right: 2rem;
+}
+
+@mixin bottom-2 {
+  bottom: 2rem;
+}
+
+@mixin left-2 {
+  left: 2rem;
+}
+
+@mixin top--1 {
+  top: -1rem;
+}
+
+@mixin right--1 {
+  right: -1rem;
+}
+
+@mixin bottom--1 {
+  bottom: -1rem;
+}
+
+@mixin left--1 {
+  left: -1rem;
+}
+
+@mixin top--2 {
+  top: -2rem;
+}
+
+@mixin right--2 {
+  right: -2rem;
+}
+
+@mixin bottom--2 {
+  bottom: -2rem;
+}
+
+@mixin left--2 {
+  left: -2rem;
+}
+
+@mixin absolute--fill {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/** not small */
+@mixin top-0-gts {
+  @media #{$breakpoint-not-small} {
+    top: 0;
+  }
+}
+
+@mixin left-0-gts {
+  @media #{$breakpoint-not-small} {
+    left: 0;
+  }
+}
+
+@mixin right-0-gts {
+  @media #{$breakpoint-not-small} {
+    right: 0;
+  }
+}
+
+@mixin bottom-0-gts {
+  @media #{$breakpoint-not-small} {
+    bottom: 0;
+  }
+}
+
+@mixin top-1-gts {
+  @media #{$breakpoint-not-small} {
+    top: 1rem;
+  }
+}
+
+@mixin left-1-gts {
+  @media #{$breakpoint-not-small} {
+    left: 1rem;
+  }
+}
+
+@mixin right-1-gts {
+  @media #{$breakpoint-not-small} {
+    right: 1rem;
+  }
+}
+
+@mixin bottom-1-gts {
+  @media #{$breakpoint-not-small} {
+    bottom: 1rem;
+  }
+}
+
+@mixin top-2-gts {
+  @media #{$breakpoint-not-small} {
+    top: 2rem;
+  }
+}
+
+@mixin left-2-gts {
+  @media #{$breakpoint-not-small} {
+    left: 2rem;
+  }
+}
+
+@mixin right-2-gts {
+  @media #{$breakpoint-not-small} {
+    right: 2rem;
+  }
+}
+
+@mixin bottom-2-gts {
+  @media #{$breakpoint-not-small} {
+    bottom: 2rem;
+  }
+}
+
+@mixin top--1-gts {
+  @media #{$breakpoint-not-small} {
+    top: -1rem;
+  }
+}
+
+@mixin right--1-gts {
+  @media #{$breakpoint-not-small} {
+    right: -1rem;
+  }
+}
+
+@mixin bottom--1-gts {
+  @media #{$breakpoint-not-small} {
+    bottom: -1rem;
+  }
+}
+
+@mixin left--1-gts {
+  @media #{$breakpoint-not-small} {
+    left: -1rem;
+  }
+}
+
+@mixin top--2-gts {
+  @media #{$breakpoint-not-small} {
+    top: -2rem;
+  }
+}
+
+@mixin right--2-gts {
+  @media #{$breakpoint-not-small} {
+    right: -2rem;
+  }
+}
+
+@mixin bottom--2-gts {
+  @media #{$breakpoint-not-small} {
+    bottom: -2rem;
+  }
+}
+
+@mixin left--2-gts {
+  @media #{$breakpoint-not-small} {
+    left: -2rem;
+  }
+}
+
+@mixin absolute--fill-gts {
+  @media #{$breakpoint-not-small} {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@mixin top-0-m {
+  @media #{$breakpoint-medium} {
+    top: 0;
+  }
+}
+
+@mixin left-0-m {
+  @media #{$breakpoint-medium} {
+    left: 0;
+  }
+}
+
+@mixin right-0-m {
+  @media #{$breakpoint-medium} {
+    right: 0;
+  }
+}
+
+@mixin bottom-0-m {
+  @media #{$breakpoint-medium} {
+    bottom: 0;
+  }
+}
+
+@mixin top-1-m {
+  @media #{$breakpoint-medium} {
+    top: 1rem;
+  }
+}
+
+@mixin left-1-m {
+  @media #{$breakpoint-medium} {
+    left: 1rem;
+  }
+}
+
+@mixin right-1-m {
+  @media #{$breakpoint-medium} {
+    right: 1rem;
+  }
+}
+
+@mixin bottom-1-m {
+  @media #{$breakpoint-medium} {
+    bottom: 1rem;
+  }
+}
+
+@mixin top-2-m {
+  @media #{$breakpoint-medium} {
+    top: 2rem;
+  }
+}
+
+@mixin left-2-m {
+  @media #{$breakpoint-medium} {
+    left: 2rem;
+  }
+}
+
+@mixin right-2-m {
+  @media #{$breakpoint-medium} {
+    right: 2rem;
+  }
+}
+
+@mixin bottom-2-m {
+  @media #{$breakpoint-medium} {
+    bottom: 2rem;
+  }
+}
+
+@mixin top--1-m {
+  @media #{$breakpoint-medium} {
+    top: -1rem;
+  }
+}
+
+@mixin right--1-m {
+  @media #{$breakpoint-medium} {
+    right: -1rem;
+  }
+}
+
+@mixin bottom--1-m {
+  @media #{$breakpoint-medium} {
+    bottom: -1rem;
+  }
+}
+
+@mixin left--1-m {
+  @media #{$breakpoint-medium} {
+    left: -1rem;
+  }
+}
+
+@mixin top--2-m {
+  @media #{$breakpoint-medium} {
+    top: -2rem;
+  }
+}
+
+@mixin right--2-m {
+  @media #{$breakpoint-medium} {
+    right: -2rem;
+  }
+}
+
+@mixin bottom--2-m {
+  @media #{$breakpoint-medium} {
+    bottom: -2rem;
+  }
+}
+
+@mixin left--2-m {
+  @media #{$breakpoint-medium} {
+    left: -2rem;
+  }
+}
+
+@mixin absolute--fill-m {
+  @media #{$breakpoint-medium} {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/** large */
+@mixin top-0-l {
+  @media #{$breakpoint-large} {
+    top: 0;
+  }
+}
+
+@mixin left-0-l {
+  @media #{$breakpoint-large} {
+    left: 0;
+  }
+}
+
+@mixin right-0-l {
+  @media #{$breakpoint-large} {
+    right: 0;
+  }
+}
+
+@mixin bottom-0-l {
+  @media #{$breakpoint-large} {
+    bottom: 0;
+  }
+}
+
+@mixin top-1-l {
+  @media #{$breakpoint-large} {
+    top: 1rem;
+  }
+}
+
+@mixin left-1-l {
+  @media #{$breakpoint-large} {
+    left: 1rem;
+  }
+}
+
+@mixin right-1-l {
+  @media #{$breakpoint-large} {
+    right: 1rem;
+  }
+}
+
+@mixin bottom-1-l {
+  @media #{$breakpoint-large} {
+    bottom: 1rem;
+  }
+}
+
+@mixin top-2-l {
+  @media #{$breakpoint-large} {
+    top: 2rem;
+  }
+}
+
+@mixin left-2-l {
+  @media #{$breakpoint-large} {
+    left: 2rem;
+  }
+}
+
+@mixin right-2-l {
+  @media #{$breakpoint-large} {
+    right: 2rem;
+  }
+}
+
+@mixin bottom-2-l {
+  @media #{$breakpoint-large} {
+    bottom: 2rem;
+  }
+}
+
+@mixin top--1-l {
+  @media #{$breakpoint-large} {
+    top: -1rem;
+  }
+}
+
+@mixin right--1-l {
+  @media #{$breakpoint-large} {
+    right: -1rem;
+  }
+}
+
+@mixin bottom--1-l {
+  @media #{$breakpoint-large} {
+    bottom: -1rem;
+  }
+}
+
+@mixin left--1-l {
+  @media #{$breakpoint-large} {
+    left: -1rem;
+  }
+}
+
+@mixin top--2-l {
+  @media #{$breakpoint-large} {
+    top: -2rem;
+  }
+}
+
+@mixin right--2-l {
+  @media #{$breakpoint-large} {
+    right: -2rem;
+  }
+}
+
+@mixin bottom--2-l {
+  @media #{$breakpoint-large} {
+    bottom: -2rem;
+  }
+}
+
+@mixin left--2-l {
+  @media #{$breakpoint-large} {
+    left: -2rem;
+  }
+}
+
+@mixin absolute--fill-l {
+  @media #{$breakpoint-large} {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

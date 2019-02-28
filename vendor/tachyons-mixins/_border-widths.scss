@@ -1,0 +1,240 @@
+/**
+   BORDER WIDTHS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Base:
+     bw = border-width
+
+   Modifiers:
+     0 = 0 width border
+     1 = 1st step in border-width scale
+     2 = 2nd step in border-width scale
+     3 = 3rd step in border-width scale
+     4 = 4th step in border-width scale
+     5 = 5th step in border-width scale
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+@mixin bw0 {
+  border-width: $border-width-none;
+}
+
+@mixin bw1 {
+  border-width: $border-width-1;
+}
+
+@mixin bw2 {
+  border-width: $border-width-2;
+}
+
+@mixin bw3 {
+  border-width: $border-width-3;
+}
+
+@mixin bw4 {
+  border-width: $border-width-4;
+}
+
+@mixin bw5 {
+  border-width: $border-width-5;
+}
+
+/* Resets */
+@mixin bt-0 {
+  border-top-width: $border-width-none;
+}
+
+@mixin br-0 {
+  border-right-width: $border-width-none;
+}
+
+@mixin bb-0 {
+  border-bottom-width: $border-width-none;
+}
+
+@mixin bl-0 {
+  border-left-width: $border-width-none;
+}
+
+@mixin bw0-gts {
+  @media #{$breakpoint-not-small} {
+    border-width: $border-width-none;
+  }
+}
+
+@mixin bw1-gts {
+  @media #{$breakpoint-not-small} {
+    border-width: $border-width-1;
+  }
+}
+
+@mixin bw2-gts {
+  @media #{$breakpoint-not-small} {
+    border-width: $border-width-2;
+  }
+}
+
+@mixin bw3-gts {
+  @media #{$breakpoint-not-small} {
+    border-width: $border-width-3;
+  }
+}
+
+@mixin bw4-gts {
+  @media #{$breakpoint-not-small} {
+    border-width: $border-width-4;
+  }
+}
+
+@mixin bw5-gts {
+  @media #{$breakpoint-not-small} {
+    border-width: $border-width-5;
+  }
+}
+
+@mixin bt-0-gts {
+  @media #{$breakpoint-not-small} {
+    border-top-width: $border-width-none;
+  }
+}
+
+@mixin br-0-gts {
+  @media #{$breakpoint-not-small} {
+    border-right-width: $border-width-none;
+  }
+}
+
+@mixin bb-0-gts {
+  @media #{$breakpoint-not-small} {
+    border-bottom-width: $border-width-none;
+  }
+}
+
+@mixin bl-0-gts {
+  @media #{$breakpoint-not-small} {
+    border-left-width: $border-width-none;
+  }
+}
+
+@mixin bw0-m {
+  @media #{$breakpoint-medium} {
+    border-width: $border-width-none;
+  }
+}
+
+@mixin bw1-m {
+  @media #{$breakpoint-medium} {
+    border-width: $border-width-1;
+  }
+}
+
+@mixin bw2-m {
+  @media #{$breakpoint-medium} {
+    border-width: $border-width-2;
+  }
+}
+
+@mixin bw3-m {
+  @media #{$breakpoint-medium} {
+    border-width: $border-width-3;
+  }
+}
+
+@mixin bw4-m {
+  @media #{$breakpoint-medium} {
+    border-width: $border-width-4;
+  }
+}
+
+@mixin bw5-m {
+  @media #{$breakpoint-medium} {
+    border-width: $border-width-5;
+  }
+}
+
+@mixin bt-0-m {
+  @media #{$breakpoint-medium} {
+    border-top-width: $border-width-none;
+  }
+}
+
+@mixin br-0-m {
+  @media #{$breakpoint-medium} {
+    border-right-width: $border-width-none;
+  }
+}
+
+@mixin bb-0-m {
+  @media #{$breakpoint-medium} {
+    border-bottom-width: $border-width-none;
+  }
+}
+
+@mixin bl-0-m {
+  @media #{$breakpoint-medium} {
+    border-left-width: $border-width-none;
+  }
+}
+
+@mixin bw0-l {
+  @media #{$breakpoint-large} {
+    border-width: $border-width-none;
+  }
+}
+
+@mixin bw1-l {
+  @media #{$breakpoint-large} {
+    border-width: $border-width-1;
+  }
+}
+
+@mixin bw2-l {
+  @media #{$breakpoint-large} {
+    border-width: $border-width-2;
+  }
+}
+
+@mixin bw3-l {
+  @media #{$breakpoint-large} {
+    border-width: $border-width-3;
+  }
+}
+
+@mixin bw4-l {
+  @media #{$breakpoint-large} {
+    border-width: $border-width-4;
+  }
+}
+
+@mixin bw5-l {
+  @media #{$breakpoint-large} {
+    border-width: $border-width-5;
+  }
+}
+
+@mixin bt-0-l {
+  @media #{$breakpoint-large} {
+    border-top-width: $border-width-none;
+  }
+}
+
+@mixin br-0-l {
+  @media #{$breakpoint-large} {
+    border-right-width: $border-width-none;
+  }
+}
+
+@mixin bb-0-l {
+  @media #{$breakpoint-large} {
+    border-bottom-width: $border-width-none;
+  }
+}
+
+@mixin bl-0-l {
+  @media #{$breakpoint-large} {
+    border-left-width: $border-width-none;
+  }
+}

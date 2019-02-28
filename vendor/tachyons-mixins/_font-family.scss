@@ -1,0 +1,75 @@
+/*
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+*/
+
+@mixin sans-serif {
+  font-family: $sans-serif;
+}
+
+@mixin serif {
+  font-family: $serif;
+}
+
+@mixin system-sans-serif {
+  font-family: sans-serif;
+}
+
+@mixin system-serif {
+  font-family: serif;
+}
+
+/* Monospaced Typefaces (for code) */
+
+/* From http://cssfontstack.com */
+@mixin code {
+  font-family: Consolas, monaco, monospace;
+}
+
+code {
+  @extend code;
+}
+
+@mixin courier {
+  font-family: "Courier Next", courier, monospace;
+}
+
+/* Sans-Serif Typefaces */
+
+@mixin helvetica {
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+
+@mixin avenir {
+  font-family: "avenir next", avenir, sans-serif;
+}
+
+/* Serif Typefaces */
+
+@mixin athelas {
+  font-family: athelas, georgia, serif;
+}
+
+@mixin georgia {
+  font-family: georgia, serif;
+}
+
+@mixin times {
+  font-family: times, serif;
+}
+
+@mixin bodoni {
+  font-family: "Bodoni MT", serif;
+}
+
+@mixin calisto {
+  font-family: "Calisto MT", serif;
+}
+
+@mixin garamond {
+  font-family: garamond, serif;
+}
+
+@mixin baskerville {
+  font-family: baskerville, serif;
+}

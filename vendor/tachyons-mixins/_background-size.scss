@@ -1,0 +1,58 @@
+/*
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+@mixin cover {
+  background-size: cover !important;
+}
+
+@mixin contain {
+  background-size: contain !important;
+}
+
+@mixin cover-gts {
+  @media #{$breakpoint-not-small} {
+    background-size: cover !important;
+  }
+}
+
+@mixin contain-gts {
+  @media #{$breakpoint-not-small} {
+    background-size: contain !important;
+  }
+}
+
+@mixin cover-m {
+  @media #{$breakpoint-medium} {
+    background-size: cover !important;
+  }
+}
+
+@mixin contain-m {
+  @media #{$breakpoint-medium} {
+    background-size: contain !important;
+  }
+}
+
+@mixin cover-l {
+  @media #{$breakpoint-large} {
+    background-size: cover !important;
+  }
+}
+
+@mixin contain-l {
+  @media #{$breakpoint-large} {
+    background-size: contain !important;
+  }
+}

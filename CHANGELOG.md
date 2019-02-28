@@ -10,7 +10,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Selectors for vanilla blocks
+- Selectors for Tachyons blocks
+- Custom version of tachyons composed of @mixins
 
 ### Improved
 
 - Debug outline mode
+- Debug element mode

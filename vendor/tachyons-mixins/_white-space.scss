@@ -1,0 +1,73 @@
+/*
+   WHITE SPACE
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+*/
+@mixin ws-normal {
+  white-space: normal;
+}
+
+@mixin nowrap {
+  white-space: nowrap;
+}
+
+@mixin pre {
+  white-space: pre;
+}
+
+@mixin ws-normal-gts {
+  @media #{$breakpoint-not-small} {
+    white-space: normal;
+  }
+}
+
+@mixin nowrap-gts {
+  @media #{$breakpoint-not-small} {
+    white-space: nowrap;
+  }
+}
+
+@mixin pre-gts {
+  @media #{$breakpoint-not-small} {
+    white-space: pre;
+  }
+}
+
+@mixin ws-normal-m {
+  @media #{$breakpoint-medium} {
+    white-space: normal;
+  }
+}
+
+@mixin nowrap-m {
+  @media #{$breakpoint-medium} {
+    white-space: nowrap;
+  }
+}
+
+@mixin pre-m {
+  @media #{$breakpoint-medium} {
+    white-space: pre;
+  }
+}
+
+@mixin ws-normal-l {
+  @media #{$breakpoint-large} {
+    white-space: normal;
+  }
+}
+
+@mixin nowrap-l {
+  @media #{$breakpoint-large} {
+    white-space: nowrap;
+  }
+}
+
+@mixin pre-l {
+  @media #{$breakpoint-large} {
+    white-space: pre;
+  }
+}

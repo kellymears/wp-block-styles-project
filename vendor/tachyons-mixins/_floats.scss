@@ -1,0 +1,95 @@
+/**
+   FLOATS
+   http://tachyons.io/docs/layout/floats/
+
+   1. Floated elements are automatically rendered as block level elements.
+      Setting floats to display inline will fix the double margin bug in
+      ie6. You know... just in case.
+
+   2. Don't forget to clearfix your floats with .cf
+
+   Base:
+     f = float
+
+   Modifiers:
+     l = left
+     r = right
+     n = none
+
+   Media Query Extensions:
+     -gts = not-small
+     -m  = medium
+     -l  = large
+**/
+
+@mixin fl {
+  float: left;
+}
+
+@mixin fr {
+  float: right;
+}
+
+@mixin fn {
+  float: none;
+}
+
+@mixin fl-gts {
+  @media #{$breakpoint-not-small} {
+    float: left;
+    display: inline;
+  }
+}
+
+@mixin fr-gts {
+  @media #{$breakpoint-not-small} {
+    float: right;
+    display: inline;
+  }
+}
+
+@mixin fn-gts {
+  @media #{$breakpoint-not-small} {
+    float: none;
+  }
+}
+
+@mixin fl-m {
+  @media #{$breakpoint-medium} {
+    float: left;
+    display: inline;
+  }
+}
+
+@mixin fr-m {
+  @media #{$breakpoint-medium} {
+    float: right;
+    display: inline;
+  }
+}
+
+@mixin fn-m {
+  @media #{$breakpoint-medium} {
+    float: none;
+  }
+}
+
+@mixin fl-l {
+  @media #{$breakpoint-large} {
+    float: left;
+    display: inline;
+  }
+}
+
+@mixin fr-l {
+  @media #{$breakpoint-large} {
+    float: right;
+    display: inline;
+  }
+}
+
+@mixin fn-l {
+  @media #{$breakpoint-large} {
+    float: none;
+  }
+}

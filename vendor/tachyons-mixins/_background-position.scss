@@ -1,0 +1,150 @@
+/*
+    BACKGROUND POSITION
+
+    Base:
+    bg = background
+
+    Modifiers:
+    -center = center center
+    -top = top center
+    -right = center right
+    -bottom = bottom center
+    -left = center left
+
+    Media Query Extensions:
+      -gts = not-small
+      -m  = medium
+      -l  = large
+ */
+
+@mixin bg-center {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin bg-top {
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@mixin bg-right {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+@mixin bg-bottom {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+@mixin bg-left {
+  @media #{$breakpoint-not-small} {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}
+
+@mixin bg-center-gts {
+  @media #{$breakpoint-not-small} {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@mixin bg-top-gts {
+  @media #{$breakpoint-not-small} {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+@mixin bg-right-gts {
+  @media #{$breakpoint-not-small} {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}
+
+@mixin bg-bottom-gts {
+  @media #{$breakpoint-not-small} {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+}
+
+@mixin bg-left-gts {
+  @media #{$breakpoint-not-small} {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}
+
+@mixin bg-center-m {
+  @media #{$breakpoint-medium} {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@mixin bg-top-m {
+  @media #{$breakpoint-medium} {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+@mixin bg-right-m {
+  @media #{$breakpoint-medium} {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}
+
+@mixin bg-bottom-m {
+  @media #{$breakpoint-medium} {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+}
+
+@mixin bg-left-m {
+  @media #{$breakpoint-medium} {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}
+
+@mixin bg-center-l {
+  @media #{$breakpoint-large} {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@mixin bg-top-l {
+  @media #{$breakpoint-large} {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+}
+
+@mixin bg-right-l {
+  @media #{$breakpoint-large} {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}
+
+@mixin bg-bottom-l {
+  @media #{$breakpoint-large} {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+}
+
+@mixin bg-left-l {
+  @media #{$breakpoint-large} {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}
