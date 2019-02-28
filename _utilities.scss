@@ -1,0 +1,134 @@
+/**
+ * block_breakpoint
+ *
+ * @param  str   media-size
+ * @return value breakpoint
+ **/
+@function block_breakpoint($media-size) {
+  @return map-get(map-get($wp-blocks-options, breakpoint), $media-size);
+}
+
+/**
+ * block_breakpoints
+ *
+ * @return map of breakpoints
+ **/
+@function block_breakpoints() {
+  @return map-get($wp-blocks-options, breakpoint);
+}
+
+/**
+ * block_content_max_width
+ *
+ * @return map of breakpoints
+ **/
+@function block_content_max_width() {
+  @return map-get($wp-blocks-options, content-max-width);
+}
+
+/**
+ * block_spacer
+ *
+ * @return spacer value
+ **/
+@function block_spacer() {
+  @return map-get($wp-blocks-options, spacer);
+}
+
+/**
+ * block_wide_width
+ *
+ * @return [.alignwide] width value
+ **/
+@function block_wide_width() {
+  @return map-get(map-get(map-get($wp-blocks-options, global-block-options), wide-align), width);
+}
+
+/**
+ * block_wide_max_width
+ *
+ * @return [.alignwide] max-width value
+ **/
+@function block_wide_max_width() {
+  @return map-get(map-get(map-get($wp-blocks-options, global-block-options), wide-align), max-width);
+}
+
+/**
+ * block_wide_vertical_margin
+ *
+ * @return [.alignwide] margin-top, margin-bottom value
+ **/
+@function block_wide_vertical_margin() {
+  @return map-get(map-get(map-get($wp-blocks-options, global-block-options), wide-align), vertical-margin);
+}
+
+/**
+ * block_vertical_margin
+ *
+ * @return margin-top, margin-bottom value for generic blocks
+ **/
+@function block_vertical_margin() {
+  @return map-get(map-get($wp-blocks-options, global-block-options), vertical-margin);
+}
+
+/**
+ * block_fontsize
+ *
+ * @param $size name of fontsize
+ *
+ * @return [.alignwide] margin-top, margin-bottom value
+ **/
+@function block_fontsize($size) {
+  @return map-get(map-get($wp-blocks-options, fontsize), $size);
+}
+
+/**
+ * block_fontsizes
+ *
+ * @return map of font-sizes
+ **/
+@function block_fontsizes() {
+  @return map-get($wp-blocks-options, fontsize);
+}
+
+/**
+ * block_color
+ *
+ * @param $color name of color
+ *
+ * @return color value
+ **/
+@function block_color($color) {
+  @return map-get(map-get($wp-blocks-options, colors), $color);
+}
+
+/**
+ * block_color
+ *
+ * @return map of colors
+ **/
+@function block_colors() {
+  @return map-get($wp-blocks-options, colors);
+}
+
+/**
+ * Option
+ *
+ * @param str $block name of block
+ * @param str $block name of option
+ *
+ * @return option value
+ **/
+@function block_option($block, $option) {
+  @return map_get(map_get(map_get($wp-blocks-options, blocks), $block), $option);
+}
+
+/**
+ * Framework
+ *
+ * @return framework selection
+ *
+ **/
+@function block_framework() {
+  @return map-get($wp-blocks-options, framework);
+}

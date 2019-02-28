@@ -1,0 +1,24 @@
+.wp-block-quote {
+  margin-top: block_spacer();
+  margin-bottom: block_spacer();
+  font-size: wp-blocks-font-size(md);
+  padding: $content-blockquote-padding;
+
+  &.is-large blockquote p {
+    font-size: wp-blocks-font-size(lg);
+  }
+
+  &.is-large blockquote cite {
+    font-size: wp-blocks-font-size(md);
+  }
+
+  &.alignwide blockquote p,
+  &.alignfull blockquote p {
+    font-size: wp-blocks-font-size(lg);
+    text-align: center;
+  }
+
+  &.alignwide blockquote cite {
+    font-size: wp-blocks-font-size(md);
+  }
+}

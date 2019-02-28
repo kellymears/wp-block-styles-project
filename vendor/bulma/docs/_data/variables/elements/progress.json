@@ -1,0 +1,29 @@
+{
+  "by_name": {
+    "$progress-bar-background-color": {
+      "name": "$progress-bar-background-color",
+      "value": "$border",
+      "type": "variable",
+      "computed_type": "color",
+      "computed_value": "hsl(0, 0%, 86%)"
+    },
+    "$progress-value-background-color": {
+      "name": "$progress-value-background-color",
+      "value": "$text",
+      "type": "variable",
+      "computed_type": "color",
+      "computed_value": "hsl(0, 0%, 29%)"
+    },
+    "$progress-indeterminate-duration": {
+      "name": "$progress-indeterminate-duration",
+      "value": "1.5s",
+      "type": "string"
+    }
+  },
+  "list": [
+    "$progress-bar-background-color",
+    "$progress-value-background-color",
+    "$progress-indeterminate-duration"
+  ],
+  "file_path": "elements/progress.sass"
+}

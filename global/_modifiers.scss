@@ -1,0 +1,48 @@
+/**
+ * font size utility
+ **/
+@each $name, $size in block_fontsizes {
+  .has-#{$name}-font-size {
+    font-size: $size;
+  }
+}
+
+/**
+ * alignment utilities
+ **/
+.has-left-content {
+  text-align: left;
+}
+
+.has-right-content {
+  text-align: right;
+}
+
+.has-center-content {
+  text-align: center;
+}
+
+/**
+ * background overlay utility
+ **/
+.has-background-dim {
+  &::before {
+    opacity: 0.5;
+    background-color: $black;
+  }
+
+  @for $i from 1 to 10 {
+    &-#{$i*10} {
+      &::before {
+        opacity: $i * 0.1;
+      }
+    }
+  }
+}
+
+/**
+ * fixed background utility
+ **/
+.has-parallax {
+  background-position: fixed;
+}

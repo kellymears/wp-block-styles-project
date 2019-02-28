@@ -1,0 +1,7 @@
+.wp-block-columns {
+  @extend .columns;
+
+  .wp-block-column {
+    @extend .column;
+  }
+}

@@ -1,0 +1,21 @@
+.wp-block-columns {
+  @extend .columns;
+
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  .wp-block-column {
+    @extend .column;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  @include debug(wp-block-columns);
+}

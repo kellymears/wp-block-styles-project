@@ -1,0 +1,16 @@
+@mixin wp-blocks-contain() {
+  width: 100%;
+  max-width: block_content_max_width();
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: block_spacer();
+  padding-right: block_spacer();
+  margin-top: block_vertical_margin();
+  margin-bottom: block_vertical_margin();
+}
+
+@mixin blocks-hover-transition() {
+  transition:
+    color 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+}

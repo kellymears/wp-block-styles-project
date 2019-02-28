@@ -1,0 +1,43 @@
+.wp-block-button {
+  .wp-block-button__link {
+    @extend .button;
+    @extend .is-link;
+    @extend .is-small;
+  }
+
+  &.alignleft {
+    @extend .has-text-left;
+  }
+
+  &.alignright {
+    @extend .has-text-right;
+  }
+
+  &.aligncenter {
+    @extend .has-text-centered;
+  }
+
+  &.alignleft .wp-block-button__link {
+    @extend .is-pulled-left;
+
+    margin: block_spacer() block_spacer() block_spacer() 0;
+  }
+
+  &.alignright .wp-block-button__link {
+    @extend .is-pulled-right;
+
+    margin: block_spacer() 0 block_spacer() block_spacer();
+  }
+
+  &.aligncenter .wp-block-button__link {
+    margin-bottom: (block_spacer() / 2);
+  }
+
+  &.is-style-rounded .wp-block-button__link {
+    @extend .is-rounded;
+  }
+
+  &.is-style-squared .wp-block-button__link {
+    border-radius: 0 !important;
+  }
+}

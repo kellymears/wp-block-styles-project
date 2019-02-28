@@ -1,0 +1,7 @@
+.wp-block-columns {
+  @extend .cf;
+}
+
+.wp-block-columns .wp-block-column {
+  @extend .w-50;
+}

@@ -1,0 +1,17 @@
+@for $i from 1 to 7 {
+  h#{$i} {
+    @extend .is-size-#{$i};
+
+    strong {
+      @extend .title;
+    }
+  }
+}
+
+table {
+  @extend .table;
+}
+
+.aligncenter {
+  @extend .has-center-content;
+}

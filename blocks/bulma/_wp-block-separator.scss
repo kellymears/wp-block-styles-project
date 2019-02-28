@@ -1,0 +1,31 @@
+.wp-block-separator {
+  display: block;
+  clear: both;
+  margin: block_spacer() auto;
+  padding: 0;
+  background: transparent;
+  border-bottom: 1px solid block_color("grey");
+  opacity: 0.6;
+
+  &.is-style-wide {
+    max-width: 80vw;
+    width: 80vw;
+  }
+
+  &.is-style-dots {
+    max-width: none;
+    height: auto;
+    line-height: 0;
+    background: none; // Override any background themes often set on the hr tag for this style.
+    border: none;
+    text-align: center;
+  }
+
+  &.is-style-dots::before {
+    content: "\00b7 \00b7 \00b7";
+    color: block_color("grey");
+    font-size: block_fontsize("md");
+    letter-spacing: block_spacer();
+    font-family: serif;
+  }
+}

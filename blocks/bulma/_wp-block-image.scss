@@ -1,0 +1,84 @@
+.wp-block-image {
+  > img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &.alignfull > figcaption,
+  &.alignwide > figcaption {
+    text-align: center;
+  }
+
+  > figure {
+    display: inline-block;
+    padding: 0;
+
+    &.alignleft,
+    &.alignright {
+      display: inline;
+
+      > img,
+      > figcaption {
+        margin-top: 0;
+      }
+    }
+
+    @media (min-width: block_breakpoint(lg)) {
+      &.alignleft > img,
+      &.alignleft > figcaption {
+        float: left;
+        margin-right: block_spacer();
+      }
+
+      &.alignleft > figcaption {
+        clear: left;
+        margin-top: 0;
+        margin-bottom: block_spacer();
+      }
+
+      &.alignright > img,
+      &.alignright > figcaption {
+        float: right;
+        margin-left: block_spacer();
+      }
+
+      &.alignright > figcaption {
+        clear: right;
+        margin-top: 0;
+        margin-bottom: block_spacer();
+      }
+    }
+
+    &.aligncenter > img,
+    &.aligncenter > figcaption {
+      width: 100%;
+    }
+
+    &.aligncenter > figcaption {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: block_spacer();
+      text-align: center;
+    }
+
+    @media screen and (max-width: block_container_width(lg)) {
+      margin: block_spacer() 0 0 0;
+
+      > img {
+        width: 100%;
+        margin-bottom: (block_spacer() / 2);
+      }
+
+      > figcaption {
+        width: 100%;
+        text-align: center;
+        margin-bottom: (block_spacer() / 2);
+      }
+    }
+  }
+
+  @include debug(wp-block-image);
+}

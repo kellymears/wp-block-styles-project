@@ -1,0 +1,33 @@
+/**
+ * containing element
+ */
+.wp-blocks main > *:not(.alignfull, .alignwide, .wp-block-wrap) {
+  @include wp-blocks-contain();
+}
+
+.wp-blocks main > .wp-block-wrap {
+  margin-top: block_wide_vertical_margin();
+  margin-bottom: block_wide_vertical_margin();
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  max-width: none;
+}
+
+.wp-blocks main > .wp-block-wrap > .alignfull {
+  width: 100vw;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wp-blocks main > .wp-block-wrap > .alignwide {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: #{block_container_width("md")}) {
+    width: block_wide_width();
+    max-width: block_wide_max_width();
+  }
+}

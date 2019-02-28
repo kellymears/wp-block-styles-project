@@ -1,0 +1,140 @@
+/* stylelint-disable */
+
+/**
+ *
+ *   _wp-blocks
+ *
+ *   Target frameworks
+ *   _____________________________
+ *
+ *     i.   vanilla (no framework)
+ *     ii.  bootstrap
+ *     iii. bulma
+ *     iv.  tachyons
+ */
+
+$wp-blocks-options: (
+  /**
+   *    Framework
+   *    _____________________________
+   *
+   */
+  framework: "bulma",
+
+  /**
+   *    Measure
+   *    _____________________________
+   *
+   *    Constrain max width of content
+   */
+  content-max-width: 788px,
+
+  /**
+   *    Breakpoints
+   *    _____________________________
+   *
+   */
+  breakpoint: (
+    md: 576px,
+    lg: 788px,
+    xl: 920px,
+  ),
+
+  /**
+   *    Spacing
+   *    _____________________________
+   */
+  spacer: 0.75rem,
+
+  /**
+   *    Fontsizes
+   *    _____________________________
+   *
+   */
+  fontsize: (
+    md: 1rem,
+    lg: 1.25rem,
+    xl: 2rem,
+  ),
+
+  /**
+   *    Colors
+   *    _____________________________
+   *
+   */
+  colors: (
+    primary: map-get($theme-colors, primary),
+    secondary: map-get($theme-colors, secondary),
+    white: rgba(255, 255, 255, 1),
+    black: rgba(0, 0, 0, 1),
+  ),
+
+  /**
+   *    Global
+   *    _____________________________
+   *
+   */
+  global-block-options: (
+    wide-align: (
+      width: 80%,
+      max-width: 1400px,
+      vertical-margin: 1.5rem,
+    ),
+  ),
+
+  /**
+   *    Blocks
+   *    _____________________________
+   *
+   */
+  blocks: (
+    // custom block wrap
+    wp-block-wrap: (
+      debug: true,
+    ),
+
+    // columns block
+    wp-block-columns: (
+      debug: true,
+    ),
+
+    // image block
+    wp-block-image: (
+      debug: true,
+    ),
+
+    // audio block
+    wp-block-audio: (
+      border-radius: 0,
+      debug: true,
+    ),
+
+    // quote block
+    wp-block-quote: (
+      debug: true,
+    ),
+
+    // pullquote block
+    wp-block-pullquote: (
+      debug: true,
+    ),
+  ),
+
+  /**
+   *    Debugging
+   *    _____________________________
+   *
+   */
+  debug: (
+    enabled: true,
+
+    settings: (
+      console: false, // output debug logs to console
+      outlineEnabled:  false,  // draw border around elements
+      outlineColor: hsla(233, 100%, 68%, 0.2), // border color
+      gridEnabled: true,
+    ),
+  ),
+);
+
+/* stylelint-enable */
