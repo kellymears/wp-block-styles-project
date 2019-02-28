@@ -2,7 +2,7 @@
   &.alignleft,
   &.alignright {
     width: 100%;
-    max-width: wp-blocks-wide-align-max-width(); // #TODO codify max-width to better surface for users
+    max-width: wp-blocks-wide-align-max-width();
   }
 
   &.wp-has-aspect-ratio {
