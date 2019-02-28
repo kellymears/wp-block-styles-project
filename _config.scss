@@ -1,38 +1,18 @@
 /* stylelint-disable */
 
-/**
- *
- *   _wp-blocks
- *
- *   Target frameworks
- *   _____________________________
- *
- *     i.   vanilla (no framework)
- *     ii.  bootstrap
- *     iii. bulma
- *     iv.  tachyons
- */
-
 $wp-blocks-options: (
   /**
-   *    Framework
-   *    _____________________________
-   *
+   *  Framework
    */
   framework: "bulma",
 
   /**
-   *    Measure
-   *    _____________________________
-   *
-   *    Constrain max width of content
+   *  Measure
    */
   content-max-width: 788px,
 
   /**
-   *    Breakpoints
-   *    _____________________________
-   *
+   *  Breakpoints
    */
   breakpoint: (
     md: 576px,
@@ -41,15 +21,12 @@ $wp-blocks-options: (
   ),
 
   /**
-   *    Spacing
-   *    _____________________________
+   *  Spacing
    */
   spacer: 0.75rem,
 
   /**
-   *    Fontsizes
-   *    _____________________________
-   *
+   *  Fontsizes
    */
   fontsize: (
     md: 1rem,
@@ -58,9 +35,7 @@ $wp-blocks-options: (
   ),
 
   /**
-   *    Colors
-   *    _____________________________
-   *
+   *  Colors
    */
   colors: (
     primary: map-get($theme-colors, primary),
@@ -70,9 +45,7 @@ $wp-blocks-options: (
   ),
 
   /**
-   *    Global
-   *    _____________________________
-   *
+   *  Global
    */
   global-block-options: (
     wide-align: (
@@ -83,9 +56,7 @@ $wp-blocks-options: (
   ),
 
   /**
-   *    Blocks
-   *    _____________________________
-   *
+   *  Blocks
    */
   blocks: (
     // custom block wrap
@@ -121,9 +92,7 @@ $wp-blocks-options: (
   ),
 
   /**
-   *    Debugging
-   *    _____________________________
-   *
+   *  Debugging
    */
   debug: (
     enabled: true,
