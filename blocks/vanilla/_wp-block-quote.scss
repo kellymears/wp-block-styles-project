@@ -1,0 +1,23 @@
+.wp-block-quote {
+  margin-top: block_spacer();
+  margin-bottom: block_spacer();
+  font-size: block_fontsize(md);
+
+  &.is-large blockquote p {
+    font-size: block_fontsize(lg);
+  }
+
+  &.is-large blockquote cite {
+    font-size: block_fontsize(md);
+  }
+
+  &.alignwide blockquote p,
+  &.alignfull blockquote p {
+    font-size: block_fontsize(lg);
+    text-align: center;
+  }
+
+  &.alignwide blockquote cite {
+    font-size: block_fontsize(md);
+  }
+}

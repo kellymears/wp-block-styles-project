@@ -1,0 +1,71 @@
+.wp-block-pullquote {
+  margin-top: block_spacer();
+  margin-bottom: block_spacer();
+
+  blockquote > p {
+    margin-top: 0;
+  }
+
+  &.alignwide,
+  &.alignfull {
+    display: block;
+    padding-left: block_spacer();
+    padding-right: block_spacer();
+  }
+
+  &.alignwide p,
+  &.alignfull p {
+    font-size: block_fontsize(lg);
+    text-align: center;
+  }
+
+  &.alignwide blockquote,
+  &.alignfull blockquote {
+    margin-top: block_spacer();
+    margin-bottom: block_spacer();
+    font-size: block_fontsize(md);
+  }
+
+  &.alignwide blockquote p,
+  &.alignfull blockquote p,
+  &.alignwide cite,
+  &.alignfull cite {
+    display: block;
+    text-align: center;
+  }
+
+  &.alignwide cite,
+  &.alignfull cite {
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &.alignleft blockquote cite,
+  &.alignright blockquote cite {
+    text-transform: uppercase;
+  }
+
+  &.alignleft {
+    text-align: left;
+  }
+
+  &.alignleft > blockquote {
+    float: left;
+    margin-right: (block_spacer() * 2);
+  }
+
+  &.alignright {
+    text-align: right;
+  }
+
+  &.alignright blockquote {
+    float: right;
+    margin-left: (block_spacer() * 2);
+  }
+
+  figure:not(.alignleft, .alignright) {
+    padding-left: block_spacer();
+    padding-right: block_spacer();
+  }
+}

@@ -1,19 +1,19 @@
 # WordPress Block Styles Project
 
-Finding a usable starting place for the major frameworks.
+Working together to find a usable starting point for the major frameworks.
 
 **Currently targeting:**
 
 - Bootstrap
 - Bulma
 - Tachyons (!)
-- Framework-free
+- Vanilla (framework-free)
 
 Pull requests welcome.
 
 ## Setup
 
-Bulma is the framework I'm currently working on. You can easily work backwards from `_wp-blocks.scss` and figure out how you might use, contribute to, or discard this work.
+To date, I've made progress with Bulma and the non-framework dependent blocksets. You can easily work backwards from `_wp-blocks.scss` and figure out how you might use, contribute to, or discard this work if you follow those selectors.
 
 ### _config.scss
 

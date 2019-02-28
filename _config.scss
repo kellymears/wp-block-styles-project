@@ -1,42 +1,24 @@
 /* stylelint-disable */
 
 $wp-blocks-options: (
-  /**
-   *  Framework
-   */
-  framework: "bulma",
+  framework: "none",
 
-  /**
-   *  Measure
-   */
   content-max-width: 788px,
 
-  /**
-   *  Breakpoints
-   */
   breakpoint: (
     md: 576px,
     lg: 788px,
     xl: 920px,
   ),
 
-  /**
-   *  Spacing
-   */
   spacer: 0.75rem,
 
-  /**
-   *  Fontsizes
-   */
   fontsize: (
     md: 1rem,
     lg: 1.25rem,
     xl: 2rem,
   ),
 
-  /**
-   *  Colors
-   */
   colors: (
     primary: map-get($theme-colors, primary),
     secondary: map-get($theme-colors, secondary),
@@ -44,9 +26,6 @@ $wp-blocks-options: (
     black: rgba(0, 0, 0, 1),
   ),
 
-  /**
-   *  Global
-   */
   global-block-options: (
     wide-align: (
       width: 80%,
@@ -55,12 +34,14 @@ $wp-blocks-options: (
     ),
   ),
 
-  /**
-   *  Blocks
-   */
   blocks: (
     // custom block wrap
     wp-block-wrap: (
+      debug: true,
+    ),
+
+    // cover block
+    wp-block-cover: (
       debug: true,
     ),
 
@@ -89,18 +70,43 @@ $wp-blocks-options: (
     wp-block-pullquote: (
       debug: true,
     ),
+
+    // :not([class])
+    h1: (
+      debug: true,
+    ),
+    h2: (
+      debug: true,
+    ),
+    h3: (
+      debug: true,
+    ),
+    h4: (
+      debug: true,
+    ),
+    h5: (
+      debug: true,
+    ),
+    h6: (
+      debug: true,
+    ),
+    p: (
+      debug: true,
+    ),
+
+    // for global outline debugging
+    wp-blocks: (
+      debug: true,
+    ),
   ),
 
-  /**
-   *  Debugging
-   */
   debug: (
     enabled: true,
 
     settings: (
-      console: false, // output debug logs to console
-      outlineEnabled:  false,  // draw border around elements
-      outlineColor: hsla(233, 100%, 68%, 0.2), // border color
+      console: true, // output debug logs to console
+      outlineEnabled:  true,  // draw border around elements
+      outlineColor: hsla(215, 100%, 49%, 0.2), // border color
       gridEnabled: true,
     ),
   ),

@@ -1,13 +1,10 @@
 .wp-block-media {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
 
   .wp-block-media-text__media {
-    margin-left: 0;
+    margin-bottom: 0;
     margin-right: block_spacer();
-    width: 50%;
-    max-width: 50%;
   }
 
   .wp-block-media-text__media img {
@@ -35,8 +32,7 @@
     .wp-block-media-text__media,
     &.has-media-on-the-right .wp-block-media-text__media {
       width: 100%;
-      max-width: 100%;
-      margin: 0;
+      margin: 0 0 block_spacer() 0;
     }
 
     .wp-block-media-text__content {

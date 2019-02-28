@@ -28,7 +28,7 @@
 .has-background-dim {
   &::before {
     opacity: 0.5;
-    background-color: $black;
+    background-color: block_color("black");
   }
 
   @for $i from 1 to 10 {

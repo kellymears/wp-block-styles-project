@@ -3,9 +3,9 @@
 @import "utilities";
 @import "debug";
 @import "global/mixins";
-@import "global/layout";
 
 .wp-blocks {
+  @import "global/layout";
   @import "global/modifiers";
 
   // Blocksets
@@ -14,5 +14,6 @@
   // @import "blocks/tachyons/blocks";
   // @import "blocks/vanilla/blocks";
 
-  @include debugGrid;
+  @include debug(wp-blocks);
+  @include debugGrid();
 }

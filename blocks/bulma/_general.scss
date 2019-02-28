@@ -5,6 +5,8 @@
     strong {
       @extend .title;
     }
+
+    @include debug(h#{$i});
   }
 }
 

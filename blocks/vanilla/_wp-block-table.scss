@@ -1,0 +1,14 @@
+.wp-block-table {
+  display: block;
+  clear: both;
+  margin: block_spacer() auto;
+  padding: 0;
+  background: transparent;
+  border-bottom: 1px solid block_color(black);
+  opacity: 0.6;
+
+  &.is-style-wide {
+    max-width: 80vw;
+    width: 80vw;
+  }
+}
